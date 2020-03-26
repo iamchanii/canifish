@@ -1,0 +1,22 @@
+{
+  "name": "@canifish/database",
+  "version": "1.0.0",
+  "author": "iamchanii",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -cw",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "rollup": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "tslib": "^1.11.1"
+  }
+}
