@@ -7,7 +7,7 @@
     "outDir": "./dist",
     "target": "es5",
     "esModuleInterop": true,
-    "lib": ["DOM", "ES5", "ES2016", "ES2017", "ES2018.Regexp"]
+    "lib": ["DOM", "ES5", "ES2015", "ES2016", "ES2017", "ES2018.Regexp"]
   },
   "include": ["src/**/*"]
 }
