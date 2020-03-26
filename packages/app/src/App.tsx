@@ -1,7 +1,7 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import { fishDatabase } from "@canifish/database";
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import { fishDatabase } from '@canifish/database';
 
 function App() {
   console.log(fishDatabase);
