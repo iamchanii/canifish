@@ -1,0 +1,45 @@
+{
+  "name": "@canifish/ui",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "cross-env NODE_ENV=development rollup -c",
+    "start": "cross-env NODE_ENV=production rollup -cw",
+    "test": "exit 0",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "iamchanii",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@emotion/core": "^10.0.28",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@storybook/addon-actions": "^5.3.17",
+    "@storybook/addon-docs": "^5.3.17",
+    "@storybook/addon-knobs": "^5.3.17",
+    "@storybook/addon-links": "^5.3.17",
+    "@storybook/addons": "^5.3.17",
+    "@storybook/react": "^5.3.17",
+    "@types/react": "^16.9.26",
+    "babel-loader": "^8.1.0",
+    "babel-preset-react-app": "^9.1.2",
+    "cross-env": "^7.0.2",
+    "react": "^16.13.1",
+    "react-docgen-typescript-loader": "^3.7.1",
+    "rollup": "^2.2.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
+    "tslib": "^1.11.1"
+  },
+  "peerDependencies": {
+    "@emotion/core": "^10.0.28",
+    "@types/react": "^16.9.26",
+    "react": "^16.13.1"
+  }
+}
