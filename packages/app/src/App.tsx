@@ -1,29 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { fishDatabase } from '@canifish/database';
+/* @jsx jsx */
+
+import React, { Suspense } from 'react';
+import FishList from './components/fish/FishList';
+import { css, jsx } from '@emotion/core';
+import { colors } from '@canifish/ui';
+
+const style = css`
+  background: ${colors.beige};
+  padding: 2rem 0;
+
+  h1 {
+    margin: 0 0 1em;
+    text-align: center;
+    color: ${colors.brown};
+  }
+`;
 
 function App() {
-  console.log(fishDatabase);
-  fishDatabase.get().then(console.log);
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main css={style}>
+      <h1>Can I Fish?</h1>
+
+      <Suspense fallback="Loading...">
+        <FishList />
+      </Suspense>
+    </main>
   );
 }
 

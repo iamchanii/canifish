@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@canifish/database": "workspace:^1.0.0",
+    "@canifish/ui": "workspace:^1.0.0",
+    "@emotion/core": "^10.0.28",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -11,8 +13,10 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "css-in-js-media": "^1.0.11",
+    "fast-deep-equal": "^3.1.1",
+    "react": "^0.0.0-experimental-aae83a4b9",
+    "react-dom": "^0.0.0-experimental-aae83a4b9",
     "react-scripts": "3.4.1",
     "typescript": "~3.7.2"
   },
