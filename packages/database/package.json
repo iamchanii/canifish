@@ -1,6 +1,6 @@
 {
   "name": "@canifish/database",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "author": "iamchanii",
   "license": "MIT",
   "main": "dist/index.js",
