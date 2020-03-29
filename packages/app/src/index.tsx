@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './fontObserver';
 
 const { createRoot } = ReactDOM as any;
 const rootNode = document.getElementById('root');

@@ -24,12 +24,14 @@ importers:
       '@testing-library/jest-dom': 4.2.4
       '@testing-library/react': 9.5.0_6f45b8bd6de96ae1e7243ae3487a8c6b
       '@testing-library/user-event': 7.2.1
+      '@types/fontfaceobserver': 0.0.6
       '@types/jest': 24.9.1
       '@types/node': 12.12.31
       '@types/react': 16.9.25
       '@types/react-dom': 16.9.5
       css-in-js-media: 1.0.11
       fast-deep-equal: 3.1.1
+      fontfaceobserver: 2.1.0
       react: 0.0.0-experimental-aae83a4b9
       react-dom: 0.0.0-experimental-aae83a4b9_227a1390c56b0c9e5e7e105b2d5d8e4f
       react-scripts: 3.4.1_typescript@3.7.5
@@ -41,12 +43,14 @@ importers:
       '@testing-library/jest-dom': ^4.2.4
       '@testing-library/react': ^9.3.2
       '@testing-library/user-event': ^7.1.2
+      '@types/fontfaceobserver': ^0.0.6
       '@types/jest': ^24.0.0
       '@types/node': ^12.0.0
       '@types/react': ^16.9.0
       '@types/react-dom': ^16.9.0
       css-in-js-media: ^1.0.11
       fast-deep-equal: ^3.1.1
+      fontfaceobserver: ^2.1.0
       react: ^0.0.0-experimental-aae83a4b9
       react-dom: ^0.0.0-experimental-aae83a4b9
       react-scripts: 3.4.1
@@ -2321,6 +2325,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
+  /@types/fontfaceobserver/0.0.6:
+    dev: false
+    resolution:
+      integrity: sha512-QJ1znjr9CDax2L17rgBnDOfNHsC1XtVAMswu+lRWvWb+kANhHA0slUNSSBsG8FVNvM4I4yXlN9doJRot3A2hkQ==
   /@types/glob/7.1.1:
     dependencies:
       '@types/events': 3.0.0
@@ -6090,6 +6098,10 @@ packages:
       node: '>=4.0'
     resolution:
       integrity: sha512-4eyLK6s6lH32nOvLLwlIOnr9zrL8Sm+OvW4pVTJNoXeGzYIkHVf+pADQi+OJ0E67hiuSLezPVPyBcIZO50TmmQ==
+  /fontfaceobserver/2.1.0:
+    dev: false
+    resolution:
+      integrity: sha512-ReOsO2F66jUa0jmv2nlM/s1MiutJx/srhAe2+TE8dJCMi02ZZOcCTxTCQFr3Yet+uODUtnr4Mewg+tNQ+4V1Ng==
   /for-in/0.1.8:
     engines:
       node: '>=0.10.0'
