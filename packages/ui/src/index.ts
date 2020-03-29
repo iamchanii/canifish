@@ -1,3 +1,3 @@
 export * from './Button';
 export * from './FishCard';
-export * from './colors';
+export { default as colors } from './colors';

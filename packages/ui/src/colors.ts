@@ -6,4 +6,5 @@ export default {
   brown: '#835A2A',
   gray: '#ADB5BD',
   lightgray: '#E9ECEF',
+  beige: '#FFF9E4',
 } as const;
