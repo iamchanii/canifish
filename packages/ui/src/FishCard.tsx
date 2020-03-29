@@ -28,19 +28,22 @@ const style = css`
     margin-bottom: 0.5rem;
   }
 
-  /** 생선 이름 */
-  .name {
+  /** 생선 이름, 가격 */
+  .name,
+  .price {
     font-size: 0.75rem;
     line-height: 0.875rem;
     font-weight: 800;
+    text-align: center;
+    white-space: pre;
+  }
+
+  .name {
     color: ${colors.brown};
   }
 
   /** 가격 */
   .price {
-    font-size: 0.75rem;
-    line-height: 0.875rem;
-    font-weight: 800;
     color: ${colors.green};
   }
 `;
