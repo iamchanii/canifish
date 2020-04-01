@@ -1,16 +1,22 @@
 import React from 'react';
 import { FishCard } from './FishCard';
-import { withKnobs, text, number } from '@storybook/addon-knobs';
 
 export default {
   title: 'components|FishCard',
   component: FishCard,
-  decorators: [withKnobs],
 };
 
-export const fishCard = () => {
-  const name = text('Name', '농어');
-  const price = number('Price', 10000);
+const applyMonths = [2, 3, 4];
 
-  return <FishCard name={name} price={price} />;
+export const fishCard = () => {
+  return (
+    <FishCard
+      name="농어"
+      price={15000}
+      applyHours="하루종일 나타나요."
+      place="연못, 강 (절벽위)"
+      shadowSize="가장 큼(6), 지느러미"
+      applyMonths={applyMonths}
+    />
+  );
 };

@@ -41,5 +41,8 @@
     "@emotion/core": "^10.0.28",
     "@types/react": "^16.9.26",
     "react": "^16.13.1"
+  },
+  "dependencies": {
+    "react-icons": "^3.9.0"
   }
 }

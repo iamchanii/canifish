@@ -8,6 +8,8 @@
     "target": "es5",
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "lib": ["ES2015", "ES2016.Array.Include"],
+    "downlevelIteration": true
   }
 }
