@@ -3,20 +3,19 @@ import fishData from './fishData';
 
 export type FishPlace =
   | 'river'
-  | 'riverOnCliff'
-  | 'mouthOfRiver'
+  | 'clifftop'
+  | 'mouth'
   | 'pond'
-  | 'sea'
-  | 'seaAtDockside';
+  | 'ocean'
+  | 'pier';
 
 export interface Fish {
   id: number;
   name: string;
   price: number;
-  place: FishPlace;
-  appearanceStartTime: number;
-  appearanceEndTime: number;
-  appearanceMonths: number[];
+  place: FishPlace[];
+  applyHours: [number, number][];
+  applyMonths: number[];
 }
 
 export const fishDatabase: Database<Fish[]> = {

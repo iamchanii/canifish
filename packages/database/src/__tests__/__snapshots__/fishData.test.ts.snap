@@ -1,1356 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`fishData 스냅샷 체크 1`] = `
-Array [
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 1,
-    "name": "납줄개",
-    "place": "river",
-    "price": 900,
-  },
-  Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 9,
-    "id": 2,
-    "name": "피라미",
-    "place": "river",
-    "price": 200,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 3,
-    "name": "붕어",
-    "place": "river",
-    "price": 160,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 16,
-    "id": 4,
-    "name": "황어",
-    "place": "river",
-    "price": 240,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 5,
-    "name": "잉어",
-    "place": "pond",
-    "price": 300,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 16,
-    "id": 6,
-    "name": "비단잉어",
-    "place": "pond",
-    "price": 4000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 7,
-    "name": "금붕어",
-    "place": "pond",
-    "price": 1300,
-  },
-  Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 9,
-    "id": 8,
-    "name": "툭눈금붕어",
-    "place": "pond",
-    "price": 1300,
-  },
-  Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 9,
-    "id": 9,
-    "name": "난주",
-    "place": "pond",
-    "price": 4500,
-  },
-  Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
-      3,
-      4,
-      5,
-      6,
-      7,
-    ],
-    "appearanceStartTime": 9,
-    "id": 10,
-    "name": "송사리",
-    "place": "pond",
-    "price": 300,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 0,
-    "id": 11,
-    "name": "가재",
-    "place": "pond",
-    "price": 200,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      7,
-      8,
-    ],
-    "appearanceStartTime": 16,
-    "id": 12,
-    "name": "자라",
-    "place": "river",
-    "price": 3750,
-  },
-  Object {
-    "appearanceEndTime": 4,
-    "appearanceMonths": Array [
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-    ],
-    "appearanceStartTime": 21,
-    "id": 13,
-    "name": "늑대거북",
-    "place": "river",
-    "price": 5000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      2,
-      3,
-      4,
-      5,
-      6,
-    ],
-    "appearanceStartTime": 0,
-    "id": 14,
-    "name": "올챙이",
-    "place": "pond",
-    "price": 100,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      4,
-      5,
-      6,
-      7,
-    ],
-    "appearanceStartTime": 0,
-    "id": 15,
-    "name": "개구리",
-    "place": "pond",
-    "price": 120,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 16,
-    "id": 16,
-    "name": "동사리",
-    "place": "river",
-    "price": 400,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      2,
-      3,
-      4,
-    ],
-    "appearanceStartTime": 0,
-    "id": 17,
-    "name": "미꾸라지",
-    "place": "river",
-    "price": 400,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-    ],
-    "appearanceStartTime": 16,
-    "id": 18,
-    "name": "메기",
-    "place": "pond",
-    "price": 800,
-  },
-  Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
-      5,
-      6,
-      7,
-    ],
-    "appearanceStartTime": 9,
-    "id": 19,
-    "name": "가물치",
-    "place": "pond",
-    "price": 5500,
-  },
-  Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 9,
-    "id": 20,
-    "name": "블루길",
-    "place": "river",
-    "price": 180,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 21,
-    "name": "옐로우퍼치",
-    "place": "river",
-    "price": 300,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 22,
-    "name": "큰입배스",
-    "place": "river",
-    "price": 400,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      5,
-      6,
-      7,
-      8,
-      9,
-    ],
-    "appearanceStartTime": 0,
-    "id": 23,
-    "name": "틸라피아",
-    "place": "river",
-    "price": 800,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 24,
-    "name": "강꼬치고기",
-    "place": "river",
-    "price": 1800,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 25,
-    "name": "빙어",
-    "place": "river",
-    "price": 320,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 0,
-    "id": 26,
-    "name": "은어",
-    "place": "river",
-    "price": 900,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      2,
-      3,
-      4,
-      5,
-      8,
-      9,
-      10,
-    ],
-    "appearanceStartTime": 16,
-    "id": 27,
-    "name": "산천어",
-    "place": "riverOnCliff",
-    "price": 1000,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      2,
-      3,
-      4,
-      5,
-      8,
-      9,
-      10,
-    ],
-    "appearanceStartTime": 16,
-    "id": 28,
-    "name": "열목어",
-    "place": "riverOnCliff",
-    "price": 3800,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      2,
-      3,
-      4,
-      8,
-      9,
-      10,
-    ],
-    "appearanceStartTime": 16,
-    "id": 29,
-    "name": "금송어",
-    "place": "riverOnCliff",
-    "price": 15000,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      11,
-    ],
-    "appearanceStartTime": 16,
-    "id": 30,
-    "name": "일본연어",
-    "place": "riverOnCliff",
-    "price": 15000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      8,
-    ],
-    "appearanceStartTime": 0,
-    "id": 31,
-    "name": "연어",
-    "place": "mouthOfRiver",
-    "price": 700,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      8,
-    ],
-    "appearanceStartTime": 0,
-    "id": 32,
-    "name": "왕연어",
-    "place": "mouthOfRiver",
-    "price": 1800,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      8,
-      9,
-      10,
-    ],
-    "appearanceStartTime": 16,
-    "id": 33,
-    "name": "참게",
-    "place": "river",
-    "price": 2000,
-  },
-  Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-    ],
-    "appearanceStartTime": 9,
-    "id": 34,
-    "name": "구피",
-    "place": "river",
-    "price": 1300,
-  },
-  Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
-      4,
-      5,
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 9,
-    "id": 35,
-    "name": "닥터피시",
-    "place": "river",
-    "price": 1500,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-    ],
-    "appearanceStartTime": 16,
-    "id": 36,
-    "name": "천사어",
-    "place": "river",
-    "price": 3000,
-  },
-  Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-    ],
-    "appearanceStartTime": 9,
-    "id": 37,
-    "name": "베타",
-    "place": "river",
-    "price": 2500,
-  },
-  Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-    ],
-    "appearanceStartTime": 9,
-    "id": 38,
-    "name": "네온테트라",
-    "place": "river",
-    "price": 500,
-  },
-  Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-    ],
-    "appearanceStartTime": 9,
-    "id": 39,
-    "name": "레인보우피시",
-    "place": "river",
-    "price": 800,
-  },
-  Object {
-    "appearanceEndTime": 4,
-    "appearanceMonths": Array [
-      5,
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 21,
-    "id": 40,
-    "name": "피라니아",
-    "place": "river",
-    "price": 2500,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      5,
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 16,
-    "id": 41,
-    "name": "아로와나",
-    "place": "river",
-    "price": 10000,
-  },
-  Object {
-    "appearanceEndTime": 21,
-    "appearanceMonths": Array [
-      5,
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 4,
-    "id": 42,
-    "name": "황금연어",
-    "place": "river",
-    "price": 15000,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      6,
-      7,
-      8,
-      9,
-    ],
-    "appearanceStartTime": 16,
-    "id": 43,
-    "name": "가아",
-    "place": "pond",
-    "price": 6000,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      5,
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 16,
-    "id": 44,
-    "name": "피라루쿠",
-    "place": "river",
-    "price": 10000,
-  },
-  Object {
-    "appearanceEndTime": 4,
-    "appearanceMonths": Array [
-      5,
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 21,
-    "id": 45,
-    "name": "엔드리케리",
-    "place": "river",
-    "price": 4000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 46,
-    "name": "철갑상어",
-    "place": "mouthOfRiver",
-    "price": 10000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 47,
-    "name": "클리오네",
-    "place": "sea",
-    "price": 1000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-    ],
-    "appearanceStartTime": 0,
-    "id": 48,
-    "name": "해마",
-    "place": "sea",
-    "price": 1100,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 0,
-    "id": 49,
-    "name": "흰동가리",
-    "place": "sea",
-    "price": 650,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 0,
-    "id": 50,
-    "name": "블루탱",
-    "place": "sea",
-    "price": 1000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 0,
-    "id": 51,
-    "name": "나비고기",
-    "place": "sea",
-    "price": 1000,
-  },
-  Object {
-    "appearanceEndTime": 21,
-    "appearanceMonths": Array [
-      6,
-      7,
-    ],
-    "appearanceStartTime": 4,
-    "id": 52,
-    "name": "나폴레옹고기",
-    "place": "sea",
-    "price": 10000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      3,
-      4,
-      6,
-      7,
-      8,
-      9,
-      10,
-    ],
-    "appearanceStartTime": 0,
-    "id": 53,
-    "name": "쏨뱅이",
-    "place": "sea",
-    "price": 500,
-  },
-  Object {
-    "appearanceEndTime": 4,
-    "appearanceMonths": Array [
-      0,
-      1,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 21,
-    "id": 54,
-    "name": "복어",
-    "place": "sea",
-    "price": 5000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 0,
-    "id": 55,
-    "name": "가시복",
-    "place": "sea",
-    "price": 250,
-  },
-  Object {
-    "appearanceEndTime": 21,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 4,
-    "id": 56,
-    "name": "멸치",
-    "place": "sea",
-    "price": 200,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 57,
-    "name": "전갱이",
-    "place": "sea",
-    "price": 150,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-    ],
-    "appearanceStartTime": 0,
-    "id": 58,
-    "name": "돌돔",
-    "place": "sea",
-    "price": 5000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 59,
-    "name": "농어",
-    "place": "sea",
-    "price": 400,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 60,
-    "name": "도미",
-    "place": "sea",
-    "price": 3000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 61,
-    "name": "가자미",
-    "place": "sea",
-    "price": 300,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 62,
-    "name": "넙치",
-    "place": "sea",
-    "price": 800,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 63,
-    "name": "오징어",
-    "place": "sea",
-    "price": 500,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      7,
-      8,
-      9,
-    ],
-    "appearanceStartTime": 0,
-    "id": 64,
-    "name": "곰치",
-    "place": "sea",
-    "price": 2000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      5,
-      6,
-      7,
-      8,
-      9,
-    ],
-    "appearanceStartTime": 0,
-    "id": 65,
-    "name": "리본장어",
-    "place": "sea",
-    "price": 600,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 66,
-    "name": "다랑어",
-    "place": "seaAtDockside",
-    "price": 7000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      6,
-      7,
-      8,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 67,
-    "name": "청새치",
-    "place": "seaAtDockside",
-    "price": 10000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-    ],
-    "appearanceStartTime": 0,
-    "id": 68,
-    "name": "무명갈전갱이",
-    "place": "seaAtDockside",
-    "price": 4500,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-    ],
-    "appearanceStartTime": 0,
-    "id": 69,
-    "name": "만새기",
-    "place": "seaAtDockside",
-    "price": 6000,
-  },
-  Object {
-    "appearanceEndTime": 21,
-    "appearanceMonths": Array [
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 4,
-    "id": 70,
-    "name": "개복치",
-    "place": "sea",
-    "price": 4000,
-  },
-  Object {
-    "appearanceEndTime": 21,
-    "appearanceMonths": Array [
-      7,
-      8,
-      9,
-      10,
-    ],
-    "appearanceStartTime": 4,
-    "id": 71,
-    "name": "가오리",
-    "place": "sea",
-    "price": 3000,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      5,
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 16,
-    "id": 72,
-    "name": "톱상어",
-    "place": "sea",
-    "price": 12000,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      5,
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 16,
-    "id": 73,
-    "name": "귀상어",
-    "place": "sea",
-    "price": 8000,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      5,
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 16,
-    "id": 74,
-    "name": "상어",
-    "place": "sea",
-    "price": 15000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      5,
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 0,
-    "id": 75,
-    "name": "고래상어",
-    "place": "sea",
-    "price": 13000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      5,
-      6,
-      7,
-      8,
-    ],
-    "appearanceStartTime": 0,
-    "id": 76,
-    "name": "빨판상어",
-    "place": "sea",
-    "price": 1500,
-  },
-  Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 16,
-    "id": 77,
-    "name": "초롱아귀",
-    "place": "sea",
-    "price": 2500,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 78,
-    "name": "산갈치",
-    "place": "sea",
-    "price": 9000,
-  },
-  Object {
-    "appearanceEndTime": 4,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 21,
-    "id": 79,
-    "name": "데메니기스",
-    "place": "sea",
-    "price": 15000,
-  },
-  Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-    ],
-    "appearanceStartTime": 0,
-    "id": 80,
-    "name": "실러캔스",
-    "place": "sea",
-    "price": 15000,
-  },
-]
-`;
-
 exports[`fishData 스냅샷 체크: fishData Snapshot 1`] = `
 Array [
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
       10,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 1,
     "name": "납줄개",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 900,
   },
   Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        9,
+        16,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -1364,15 +44,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 9,
     "id": 2,
     "name": "피라미",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 200,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -1386,15 +72,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 3,
     "name": "붕어",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 160,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -1408,15 +100,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 16,
     "id": 4,
     "name": "황어",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 240,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -1430,15 +128,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 5,
     "name": "잉어",
-    "place": "pond",
+    "place": Array [
+      "pond",
+    ],
     "price": 300,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -1452,15 +156,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 16,
     "id": 6,
     "name": "비단잉어",
-    "place": "pond",
+    "place": Array [
+      "pond",
+    ],
     "price": 4000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -1474,15 +184,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 7,
     "name": "금붕어",
-    "place": "pond",
+    "place": Array [
+      "pond",
+    ],
     "price": 1300,
   },
   Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        9,
+        16,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -1496,15 +212,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 9,
     "id": 8,
     "name": "툭눈금붕어",
-    "place": "pond",
+    "place": Array [
+      "pond",
+    ],
     "price": 1300,
   },
   Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        9,
+        16,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -1518,30 +240,42 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 9,
     "id": 9,
     "name": "난주",
-    "place": "pond",
+    "place": Array [
+      "pond",
+    ],
     "price": 4500,
   },
   Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       3,
       4,
       5,
       6,
       7,
     ],
-    "appearanceStartTime": 9,
     "id": 10,
     "name": "송사리",
-    "place": "pond",
+    "place": Array [
+      "pond",
+    ],
     "price": 300,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       3,
       4,
       5,
@@ -1549,27 +283,39 @@ Array [
       7,
       8,
     ],
-    "appearanceStartTime": 0,
     "id": 11,
     "name": "가재",
-    "place": "pond",
+    "place": Array [
+      "pond",
+    ],
     "price": 200,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       7,
       8,
     ],
-    "appearanceStartTime": 16,
     "id": 12,
     "name": "자라",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 3750,
   },
   Object {
-    "appearanceEndTime": 4,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        21,
+        4,
+      ],
+    ],
+    "applyMonths": Array [
       3,
       4,
       5,
@@ -1578,44 +324,62 @@ Array [
       8,
       9,
     ],
-    "appearanceStartTime": 21,
     "id": 13,
     "name": "늑대거북",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 5000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       2,
       3,
       4,
       5,
       6,
     ],
-    "appearanceStartTime": 0,
     "id": 14,
     "name": "올챙이",
-    "place": "pond",
+    "place": Array [
+      "pond",
+    ],
     "price": 100,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       4,
       5,
       6,
       7,
     ],
-    "appearanceStartTime": 0,
     "id": 15,
     "name": "개구리",
-    "place": "pond",
+    "place": Array [
+      "pond",
+    ],
     "price": 120,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -1629,28 +393,40 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 16,
     "id": 16,
     "name": "동사리",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 400,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       2,
       3,
       4,
     ],
-    "appearanceStartTime": 0,
     "id": 17,
     "name": "미꾸라지",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 400,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       4,
       5,
       6,
@@ -1658,28 +434,40 @@ Array [
       8,
       9,
     ],
-    "appearanceStartTime": 16,
     "id": 18,
     "name": "메기",
-    "place": "pond",
+    "place": Array [
+      "pond",
+    ],
     "price": 800,
   },
   Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        9,
+        16,
+      ],
+    ],
+    "applyMonths": Array [
       5,
       6,
       7,
     ],
-    "appearanceStartTime": 9,
     "id": 19,
     "name": "가물치",
-    "place": "pond",
+    "place": Array [
+      "pond",
+    ],
     "price": 5500,
   },
   Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        9,
+        16,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -1693,15 +481,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 9,
     "id": 20,
     "name": "블루길",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 180,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -1709,15 +503,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 21,
     "name": "옐로우퍼치",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 300,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -1731,70 +531,100 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 22,
     "name": "큰입배스",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 400,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       5,
       6,
       7,
       8,
       9,
     ],
-    "appearanceStartTime": 0,
     "id": 23,
     "name": "틸라피아",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 800,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       8,
       9,
       10,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 24,
     "name": "강꼬치고기",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 1800,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 25,
     "name": "빙어",
-    "place": "river",
-    "price": 320,
+    "place": Array [
+      "river",
+    ],
+    "price": 400,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       6,
       7,
       8,
     ],
-    "appearanceStartTime": 0,
     "id": 26,
     "name": "은어",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 900,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       2,
       3,
       4,
@@ -1803,15 +633,22 @@ Array [
       9,
       10,
     ],
-    "appearanceStartTime": 16,
     "id": 27,
     "name": "산천어",
-    "place": "riverOnCliff",
+    "place": Array [
+      "pond",
+      "clifftop",
+    ],
     "price": 1000,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       2,
       3,
       4,
@@ -1820,15 +657,22 @@ Array [
       9,
       10,
     ],
-    "appearanceStartTime": 16,
     "id": 28,
     "name": "열목어",
-    "place": "riverOnCliff",
+    "place": Array [
+      "pond",
+      "clifftop",
+    ],
     "price": 3800,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       2,
       3,
       4,
@@ -1836,64 +680,96 @@ Array [
       9,
       10,
     ],
-    "appearanceStartTime": 16,
     "id": 29,
     "name": "금송어",
-    "place": "riverOnCliff",
+    "place": Array [
+      "pond",
+      "clifftop",
+    ],
     "price": 15000,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
       11,
     ],
-    "appearanceStartTime": 16,
     "id": 30,
     "name": "일본연어",
-    "place": "riverOnCliff",
+    "place": Array [
+      "pond",
+      "clifftop",
+    ],
     "price": 15000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       8,
     ],
-    "appearanceStartTime": 0,
     "id": 31,
     "name": "연어",
-    "place": "mouthOfRiver",
+    "place": Array [
+      "mouth",
+    ],
     "price": 700,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       8,
     ],
-    "appearanceStartTime": 0,
     "id": 32,
     "name": "왕연어",
-    "place": "mouthOfRiver",
+    "place": Array [
+      "mouth",
+    ],
     "price": 1800,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       8,
       9,
       10,
     ],
-    "appearanceStartTime": 16,
     "id": 33,
     "name": "참게",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 2000,
   },
   Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        9,
+        16,
+      ],
+    ],
+    "applyMonths": Array [
       3,
       4,
       5,
@@ -1903,30 +779,42 @@ Array [
       9,
       10,
     ],
-    "appearanceStartTime": 9,
     "id": 34,
     "name": "구피",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 1300,
   },
   Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        9,
+        16,
+      ],
+    ],
+    "applyMonths": Array [
       4,
       5,
       6,
       7,
       8,
     ],
-    "appearanceStartTime": 9,
     "id": 35,
     "name": "닥터피시",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 1500,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       4,
       5,
       6,
@@ -1934,15 +822,21 @@ Array [
       8,
       9,
     ],
-    "appearanceStartTime": 16,
     "id": 36,
     "name": "천사어",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 3000,
   },
   Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        9,
+        16,
+      ],
+    ],
+    "applyMonths": Array [
       4,
       5,
       6,
@@ -1950,15 +844,21 @@ Array [
       8,
       9,
     ],
-    "appearanceStartTime": 9,
     "id": 37,
     "name": "베타",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 2500,
   },
   Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        9,
+        16,
+      ],
+    ],
+    "applyMonths": Array [
       3,
       4,
       5,
@@ -1968,15 +868,21 @@ Array [
       9,
       10,
     ],
-    "appearanceStartTime": 9,
     "id": 38,
     "name": "네온테트라",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 500,
   },
   Object {
-    "appearanceEndTime": 16,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        9,
+        16,
+      ],
+    ],
+    "applyMonths": Array [
       4,
       5,
       6,
@@ -1984,99 +890,145 @@ Array [
       8,
       9,
     ],
-    "appearanceStartTime": 9,
     "id": 39,
     "name": "레인보우피시",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 800,
   },
   Object {
-    "appearanceEndTime": 4,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        9,
+        16,
+      ],
+      Array [
+        21,
+        4,
+      ],
+    ],
+    "applyMonths": Array [
       5,
       6,
       7,
       8,
     ],
-    "appearanceStartTime": 21,
     "id": 40,
     "name": "피라니아",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 2500,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       5,
       6,
       7,
       8,
     ],
-    "appearanceStartTime": 16,
     "id": 41,
     "name": "아로와나",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 10000,
   },
   Object {
-    "appearanceEndTime": 21,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        4,
+        21,
+      ],
+    ],
+    "applyMonths": Array [
       5,
       6,
       7,
       8,
     ],
-    "appearanceStartTime": 4,
     "id": 42,
     "name": "황금연어",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 15000,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
+      5,
       6,
       7,
       8,
-      9,
     ],
-    "appearanceStartTime": 16,
     "id": 43,
     "name": "가아",
-    "place": "pond",
+    "place": Array [
+      "pond",
+    ],
     "price": 6000,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       5,
       6,
       7,
       8,
     ],
-    "appearanceStartTime": 16,
     "id": 44,
     "name": "피라루쿠",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 10000,
   },
   Object {
-    "appearanceEndTime": 4,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        21,
+        4,
+      ],
+    ],
+    "applyMonths": Array [
       5,
       6,
       7,
       8,
     ],
-    "appearanceStartTime": 21,
     "id": 45,
     "name": "엔드리케리",
-    "place": "river",
+    "place": Array [
+      "river",
+    ],
     "price": 4000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -2085,29 +1037,41 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 46,
     "name": "철갑상어",
-    "place": "mouthOfRiver",
+    "place": Array [
+      "mouth",
+    ],
     "price": 10000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 47,
     "name": "클리오네",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 1000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       3,
       4,
       5,
@@ -2117,15 +1081,21 @@ Array [
       9,
       10,
     ],
-    "appearanceStartTime": 0,
     "id": 48,
     "name": "해마",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 1100,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       3,
       4,
       5,
@@ -2133,15 +1103,21 @@ Array [
       7,
       8,
     ],
-    "appearanceStartTime": 0,
     "id": 49,
     "name": "흰동가리",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 650,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       3,
       4,
       5,
@@ -2149,15 +1125,21 @@ Array [
       7,
       8,
     ],
-    "appearanceStartTime": 0,
     "id": 50,
     "name": "블루탱",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 1000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       3,
       4,
       5,
@@ -2165,71 +1147,102 @@ Array [
       7,
       8,
     ],
-    "appearanceStartTime": 0,
     "id": 51,
     "name": "나비고기",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 1000,
   },
   Object {
-    "appearanceEndTime": 21,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        4,
+        21,
+      ],
+    ],
+    "applyMonths": Array [
       6,
       7,
     ],
-    "appearanceStartTime": 4,
     "id": 52,
     "name": "나폴레옹고기",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 10000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       3,
       4,
+      5,
       6,
       7,
       8,
       9,
       10,
     ],
-    "appearanceStartTime": 0,
     "id": 53,
     "name": "쏨뱅이",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 500,
   },
   Object {
-    "appearanceEndTime": 4,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        21,
+        4,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       10,
       11,
     ],
-    "appearanceStartTime": 21,
     "id": 54,
     "name": "복어",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 5000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       6,
       7,
       8,
     ],
-    "appearanceStartTime": 0,
     "id": 55,
     "name": "가시복",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 250,
   },
   Object {
-    "appearanceEndTime": 21,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        4,
+        21,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -2243,15 +1256,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 4,
     "id": 56,
     "name": "멸치",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 200,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -2265,15 +1284,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 57,
     "name": "전갱이",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 150,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       2,
       3,
       4,
@@ -2284,15 +1309,21 @@ Array [
       9,
       10,
     ],
-    "appearanceStartTime": 0,
     "id": 58,
     "name": "돌돔",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 5000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -2306,15 +1337,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 59,
     "name": "농어",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 400,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -2328,15 +1365,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 60,
     "name": "도미",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 3000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -2345,15 +1388,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 61,
     "name": "가자미",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 300,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -2367,15 +1416,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 62,
     "name": "넙치",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 800,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -2386,43 +1441,61 @@ Array [
       7,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 63,
     "name": "오징어",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 500,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       7,
       8,
       9,
     ],
-    "appearanceStartTime": 0,
     "id": 64,
     "name": "곰치",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 2000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       5,
       6,
       7,
       8,
       9,
     ],
-    "appearanceStartTime": 0,
     "id": 65,
     "name": "리본장어",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 600,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -2430,15 +1503,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 66,
     "name": "다랑어",
-    "place": "seaAtDockside",
+    "place": Array [
+      "pier",
+    ],
     "price": 7000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -2449,15 +1528,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 67,
     "name": "청새치",
-    "place": "seaAtDockside",
+    "place": Array [
+      "pier",
+    ],
     "price": 10000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       4,
       5,
       6,
@@ -2465,15 +1550,21 @@ Array [
       8,
       9,
     ],
-    "appearanceStartTime": 0,
     "id": 68,
     "name": "무명갈전갱이",
-    "place": "seaAtDockside",
+    "place": Array [
+      "pier",
+    ],
     "price": 4500,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       4,
       5,
       6,
@@ -2481,127 +1572,181 @@ Array [
       8,
       9,
     ],
-    "appearanceStartTime": 0,
     "id": 69,
     "name": "만새기",
-    "place": "seaAtDockside",
+    "place": Array [
+      "pier",
+    ],
     "price": 6000,
   },
   Object {
-    "appearanceEndTime": 21,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        4,
+        21,
+      ],
+    ],
+    "applyMonths": Array [
       6,
       7,
       8,
     ],
-    "appearanceStartTime": 4,
     "id": 70,
     "name": "개복치",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 4000,
   },
   Object {
-    "appearanceEndTime": 21,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        4,
+        21,
+      ],
+    ],
+    "applyMonths": Array [
       7,
       8,
       9,
       10,
     ],
-    "appearanceStartTime": 4,
     "id": 71,
     "name": "가오리",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 3000,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       5,
       6,
       7,
       8,
     ],
-    "appearanceStartTime": 16,
     "id": 72,
     "name": "톱상어",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 12000,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       5,
       6,
       7,
       8,
     ],
-    "appearanceStartTime": 16,
     "id": 73,
     "name": "귀상어",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 8000,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       5,
       6,
       7,
       8,
     ],
-    "appearanceStartTime": 16,
     "id": 74,
     "name": "상어",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 15000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       5,
       6,
       7,
       8,
     ],
-    "appearanceStartTime": 0,
     "id": 75,
     "name": "고래상어",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 13000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       5,
       6,
       7,
       8,
     ],
-    "appearanceStartTime": 0,
     "id": 76,
     "name": "빨판상어",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 1500,
   },
   Object {
-    "appearanceEndTime": 9,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        16,
+        9,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
       10,
       11,
     ],
-    "appearanceStartTime": 16,
     "id": 77,
     "name": "초롱아귀",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 2500,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -2609,15 +1754,21 @@ Array [
       4,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 78,
     "name": "산갈치",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 9000,
   },
   Object {
-    "appearanceEndTime": 4,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        21,
+        4,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -2631,15 +1782,21 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 21,
     "id": 79,
     "name": "데메니기스",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 15000,
   },
   Object {
-    "appearanceEndTime": 23,
-    "appearanceMonths": Array [
+    "applyHours": Array [
+      Array [
+        0,
+        23,
+      ],
+    ],
+    "applyMonths": Array [
       0,
       1,
       2,
@@ -2653,10 +1810,11 @@ Array [
       10,
       11,
     ],
-    "appearanceStartTime": 0,
     "id": 80,
     "name": "실러캔스",
-    "place": "sea",
+    "place": Array [
+      "ocean",
+    ],
     "price": 15000,
   },
 ]
