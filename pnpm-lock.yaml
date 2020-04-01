@@ -67,6 +67,8 @@ importers:
       rollup-plugin-typescript2: ^0.26.0
       tslib: ^1.11.1
   packages/ui:
+    dependencies:
+      react-icons: 3.9.0_react@16.13.1
     devDependencies:
       '@babel/core': 7.9.0
       '@emotion/core': 10.0.28_react@16.13.1
@@ -103,6 +105,7 @@ importers:
       cross-env: ^7.0.2
       react: ^16.13.1
       react-docgen-typescript-loader: ^3.7.1
+      react-icons: ^3.9.0
       rollup: ^2.2.0
       rollup-plugin-babel: ^4.4.0
       rollup-plugin-peer-deps-external: ^2.2.2
@@ -11574,6 +11577,15 @@ packages:
       react: '>= 0.14.0'
     resolution:
       integrity: sha512-3n3OU8vLX/pfcJrR3xJ1zlww6KS1kEJt0Whxc4FiGV+MJrQ1mYSYI3qS/11d2MJDFm8IhOXMTFQirfu6AVOF6Q==
+  /react-icons/3.9.0_react@16.13.1:
+    dependencies:
+      camelcase: 5.3.1
+      react: 16.13.1
+    dev: false
+    peerDependencies:
+      react: '*'
+    resolution:
+      integrity: sha512-gKbYKR+4QsD3PmIHLAM9TDDpnaTsr3XZeK1NTAb6WQQ+gxEdJ0xuCgLq0pxXdS7Utg2AIpcVhM1ut/jlDhcyNg==
   /react-input-autosize/2.2.2_react@16.13.1:
     dependencies:
       prop-types: 15.7.2
@@ -11777,7 +11789,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       prop-types: 15.7.2
-    dev: true
     engines:
       node: '>=0.10.0'
     resolution:
