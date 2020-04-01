@@ -9,11 +9,16 @@ export type FishPlace =
   | 'ocean'
   | 'pier';
 
+export type FishShadowSize = number | 'narrow';
+
 export interface Fish {
   id: number;
   name: string;
   price: number;
   place: FishPlace[];
+  shadowSize: FishShadowSize;
+  hasFin: boolean;
+  hasSound: boolean;
   applyHours: [number, number][];
   applyMonths: number[];
 }

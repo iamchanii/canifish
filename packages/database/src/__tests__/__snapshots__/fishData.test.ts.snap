@@ -16,12 +16,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 1,
     "name": "납줄개",
     "place": Array [
       "river",
     ],
     "price": 900,
+    "shadowSize": 1,
   },
   Object {
     "applyHours": Array [
@@ -44,12 +47,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 2,
     "name": "피라미",
     "place": Array [
       "river",
     ],
     "price": 200,
+    "shadowSize": 1,
   },
   Object {
     "applyHours": Array [
@@ -72,12 +78,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 3,
     "name": "붕어",
     "place": Array [
       "river",
     ],
     "price": 160,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -100,12 +109,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 4,
     "name": "황어",
     "place": Array [
       "river",
     ],
     "price": 240,
+    "shadowSize": 3,
   },
   Object {
     "applyHours": Array [
@@ -128,12 +140,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 5,
     "name": "잉어",
     "place": Array [
       "pond",
     ],
     "price": 300,
+    "shadowSize": 4,
   },
   Object {
     "applyHours": Array [
@@ -156,12 +171,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 6,
     "name": "비단잉어",
     "place": Array [
       "pond",
     ],
     "price": 4000,
+    "shadowSize": 4,
   },
   Object {
     "applyHours": Array [
@@ -184,12 +202,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 7,
     "name": "금붕어",
     "place": Array [
       "pond",
     ],
     "price": 1300,
+    "shadowSize": 1,
   },
   Object {
     "applyHours": Array [
@@ -212,12 +233,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 8,
     "name": "툭눈금붕어",
     "place": Array [
       "pond",
     ],
     "price": 1300,
+    "shadowSize": 1,
   },
   Object {
     "applyHours": Array [
@@ -240,12 +264,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 9,
     "name": "난주",
     "place": Array [
       "pond",
     ],
     "price": 4500,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -261,12 +288,15 @@ Array [
       6,
       7,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 10,
     "name": "송사리",
     "place": Array [
       "pond",
     ],
     "price": 300,
+    "shadowSize": 1,
   },
   Object {
     "applyHours": Array [
@@ -283,12 +313,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 11,
     "name": "가재",
     "place": Array [
       "pond",
     ],
     "price": 200,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -301,12 +334,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 12,
     "name": "자라",
     "place": Array [
       "river",
     ],
     "price": 3750,
+    "shadowSize": 4,
   },
   Object {
     "applyHours": Array [
@@ -324,12 +360,15 @@ Array [
       8,
       9,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 13,
     "name": "늑대거북",
     "place": Array [
       "river",
     ],
     "price": 5000,
+    "shadowSize": 5,
   },
   Object {
     "applyHours": Array [
@@ -345,12 +384,15 @@ Array [
       5,
       6,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 14,
     "name": "올챙이",
     "place": Array [
       "pond",
     ],
     "price": 100,
+    "shadowSize": 1,
   },
   Object {
     "applyHours": Array [
@@ -365,12 +407,15 @@ Array [
       6,
       7,
     ],
+    "hasFin": false,
+    "hasSound": true,
     "id": 15,
     "name": "개구리",
     "place": Array [
       "pond",
     ],
     "price": 120,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -393,12 +438,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 16,
     "name": "동사리",
     "place": Array [
       "river",
     ],
     "price": 400,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -412,12 +460,15 @@ Array [
       3,
       4,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 17,
     "name": "미꾸라지",
     "place": Array [
       "river",
     ],
     "price": 400,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -434,12 +485,15 @@ Array [
       8,
       9,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 18,
     "name": "메기",
     "place": Array [
       "pond",
     ],
     "price": 800,
+    "shadowSize": 4,
   },
   Object {
     "applyHours": Array [
@@ -453,12 +507,15 @@ Array [
       6,
       7,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 19,
     "name": "가물치",
     "place": Array [
       "pond",
     ],
     "price": 5500,
+    "shadowSize": 5,
   },
   Object {
     "applyHours": Array [
@@ -481,12 +538,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 20,
     "name": "블루길",
     "place": Array [
       "river",
     ],
     "price": 180,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -503,12 +563,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 21,
     "name": "옐로우퍼치",
     "place": Array [
       "river",
     ],
     "price": 300,
+    "shadowSize": 3,
   },
   Object {
     "applyHours": Array [
@@ -531,12 +594,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 22,
     "name": "큰입배스",
     "place": Array [
       "river",
     ],
     "price": 400,
+    "shadowSize": 4,
   },
   Object {
     "applyHours": Array [
@@ -552,12 +618,15 @@ Array [
       8,
       9,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 23,
     "name": "틸라피아",
     "place": Array [
       "river",
     ],
     "price": 800,
+    "shadowSize": 3,
   },
   Object {
     "applyHours": Array [
@@ -572,12 +641,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 24,
     "name": "강꼬치고기",
     "place": Array [
       "river",
     ],
     "price": 1800,
+    "shadowSize": 5,
   },
   Object {
     "applyHours": Array [
@@ -591,12 +663,15 @@ Array [
       1,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 25,
     "name": "빙어",
     "place": Array [
       "river",
     ],
     "price": 400,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -610,12 +685,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 26,
     "name": "은어",
     "place": Array [
       "river",
     ],
     "price": 900,
+    "shadowSize": 3,
   },
   Object {
     "applyHours": Array [
@@ -633,6 +711,8 @@ Array [
       9,
       10,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 27,
     "name": "산천어",
     "place": Array [
@@ -640,6 +720,7 @@ Array [
       "clifftop",
     ],
     "price": 1000,
+    "shadowSize": 3,
   },
   Object {
     "applyHours": Array [
@@ -657,6 +738,8 @@ Array [
       9,
       10,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 28,
     "name": "열목어",
     "place": Array [
@@ -664,6 +747,7 @@ Array [
       "clifftop",
     ],
     "price": 3800,
+    "shadowSize": 3,
   },
   Object {
     "applyHours": Array [
@@ -680,6 +764,8 @@ Array [
       9,
       10,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 29,
     "name": "금송어",
     "place": Array [
@@ -687,6 +773,7 @@ Array [
       "clifftop",
     ],
     "price": 15000,
+    "shadowSize": 3,
   },
   Object {
     "applyHours": Array [
@@ -701,6 +788,8 @@ Array [
       2,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 30,
     "name": "일본연어",
     "place": Array [
@@ -708,6 +797,7 @@ Array [
       "clifftop",
     ],
     "price": 15000,
+    "shadowSize": 5,
   },
   Object {
     "applyHours": Array [
@@ -719,12 +809,15 @@ Array [
     "applyMonths": Array [
       8,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 31,
     "name": "연어",
     "place": Array [
       "mouth",
     ],
     "price": 700,
+    "shadowSize": 4,
   },
   Object {
     "applyHours": Array [
@@ -736,12 +829,15 @@ Array [
     "applyMonths": Array [
       8,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 32,
     "name": "왕연어",
     "place": Array [
       "mouth",
     ],
     "price": 1800,
+    "shadowSize": 6,
   },
   Object {
     "applyHours": Array [
@@ -755,12 +851,15 @@ Array [
       9,
       10,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 33,
     "name": "참게",
     "place": Array [
       "river",
     ],
     "price": 2000,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -779,12 +878,15 @@ Array [
       9,
       10,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 34,
     "name": "구피",
     "place": Array [
       "river",
     ],
     "price": 1300,
+    "shadowSize": 1,
   },
   Object {
     "applyHours": Array [
@@ -800,12 +902,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 35,
     "name": "닥터피시",
     "place": Array [
       "river",
     ],
     "price": 1500,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -822,12 +927,15 @@ Array [
       8,
       9,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 36,
     "name": "천사어",
     "place": Array [
       "river",
     ],
     "price": 3000,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -844,12 +952,15 @@ Array [
       8,
       9,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 37,
     "name": "베타",
     "place": Array [
       "river",
     ],
     "price": 2500,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -868,12 +979,15 @@ Array [
       9,
       10,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 38,
     "name": "네온테트라",
     "place": Array [
       "river",
     ],
     "price": 500,
+    "shadowSize": 1,
   },
   Object {
     "applyHours": Array [
@@ -890,12 +1004,15 @@ Array [
       8,
       9,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 39,
     "name": "레인보우피시",
     "place": Array [
       "river",
     ],
     "price": 800,
+    "shadowSize": 1,
   },
   Object {
     "applyHours": Array [
@@ -914,12 +1031,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 40,
     "name": "피라니아",
     "place": Array [
       "river",
     ],
     "price": 2500,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -934,12 +1054,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 41,
     "name": "아로와나",
     "place": Array [
       "river",
     ],
     "price": 10000,
+    "shadowSize": 4,
   },
   Object {
     "applyHours": Array [
@@ -954,12 +1077,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 42,
     "name": "황금연어",
     "place": Array [
       "river",
     ],
     "price": 15000,
+    "shadowSize": 5,
   },
   Object {
     "applyHours": Array [
@@ -974,12 +1100,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 43,
     "name": "가아",
     "place": Array [
       "pond",
     ],
     "price": 6000,
+    "shadowSize": 6,
   },
   Object {
     "applyHours": Array [
@@ -994,12 +1123,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 44,
     "name": "피라루쿠",
     "place": Array [
       "river",
     ],
     "price": 10000,
+    "shadowSize": 6,
   },
   Object {
     "applyHours": Array [
@@ -1014,12 +1146,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 45,
     "name": "엔드리케리",
     "place": Array [
       "river",
     ],
     "price": 4000,
+    "shadowSize": 4,
   },
   Object {
     "applyHours": Array [
@@ -1037,12 +1172,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 46,
     "name": "철갑상어",
     "place": Array [
       "mouth",
     ],
     "price": 10000,
+    "shadowSize": 6,
   },
   Object {
     "applyHours": Array [
@@ -1057,12 +1195,15 @@ Array [
       2,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 47,
     "name": "클리오네",
     "place": Array [
       "ocean",
     ],
     "price": 1000,
+    "shadowSize": 1,
   },
   Object {
     "applyHours": Array [
@@ -1081,12 +1222,15 @@ Array [
       9,
       10,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 48,
     "name": "해마",
     "place": Array [
       "ocean",
     ],
     "price": 1100,
+    "shadowSize": 1,
   },
   Object {
     "applyHours": Array [
@@ -1103,12 +1247,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 49,
     "name": "흰동가리",
     "place": Array [
       "ocean",
     ],
     "price": 650,
+    "shadowSize": 1,
   },
   Object {
     "applyHours": Array [
@@ -1125,12 +1272,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 50,
     "name": "블루탱",
     "place": Array [
       "ocean",
     ],
     "price": 1000,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -1147,12 +1297,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 51,
     "name": "나비고기",
     "place": Array [
       "ocean",
     ],
     "price": 1000,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -1165,12 +1318,15 @@ Array [
       6,
       7,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 52,
     "name": "나폴레옹고기",
     "place": Array [
       "ocean",
     ],
     "price": 10000,
+    "shadowSize": 6,
   },
   Object {
     "applyHours": Array [
@@ -1189,12 +1345,15 @@ Array [
       9,
       10,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 53,
     "name": "쏨뱅이",
     "place": Array [
       "ocean",
     ],
     "price": 500,
+    "shadowSize": 3,
   },
   Object {
     "applyHours": Array [
@@ -1209,12 +1368,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 54,
     "name": "복어",
     "place": Array [
       "ocean",
     ],
     "price": 5000,
+    "shadowSize": 3,
   },
   Object {
     "applyHours": Array [
@@ -1228,12 +1390,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 55,
     "name": "가시복",
     "place": Array [
       "ocean",
     ],
     "price": 250,
+    "shadowSize": 3,
   },
   Object {
     "applyHours": Array [
@@ -1256,12 +1421,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 56,
     "name": "멸치",
     "place": Array [
       "ocean",
     ],
     "price": 200,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -1284,12 +1452,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 57,
     "name": "전갱이",
     "place": Array [
       "ocean",
     ],
     "price": 150,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -1309,12 +1480,15 @@ Array [
       9,
       10,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 58,
     "name": "돌돔",
     "place": Array [
       "ocean",
     ],
     "price": 5000,
+    "shadowSize": 3,
   },
   Object {
     "applyHours": Array [
@@ -1337,12 +1511,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 59,
     "name": "농어",
     "place": Array [
       "ocean",
     ],
     "price": 400,
+    "shadowSize": 5,
   },
   Object {
     "applyHours": Array [
@@ -1365,12 +1542,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 60,
     "name": "도미",
     "place": Array [
       "ocean",
     ],
     "price": 3000,
+    "shadowSize": 4,
   },
   Object {
     "applyHours": Array [
@@ -1388,12 +1568,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 61,
     "name": "가자미",
     "place": Array [
       "ocean",
     ],
     "price": 300,
+    "shadowSize": 3,
   },
   Object {
     "applyHours": Array [
@@ -1416,12 +1599,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 62,
     "name": "넙치",
     "place": Array [
       "ocean",
     ],
     "price": 800,
+    "shadowSize": 5,
   },
   Object {
     "applyHours": Array [
@@ -1441,12 +1627,15 @@ Array [
       7,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 63,
     "name": "오징어",
     "place": Array [
       "ocean",
     ],
     "price": 500,
+    "shadowSize": 3,
   },
   Object {
     "applyHours": Array [
@@ -1460,12 +1649,15 @@ Array [
       8,
       9,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 64,
     "name": "곰치",
     "place": Array [
       "ocean",
     ],
     "price": 2000,
+    "shadowSize": "narrow",
   },
   Object {
     "applyHours": Array [
@@ -1481,12 +1673,15 @@ Array [
       8,
       9,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 65,
     "name": "리본장어",
     "place": Array [
       "ocean",
     ],
     "price": 600,
+    "shadowSize": "narrow",
   },
   Object {
     "applyHours": Array [
@@ -1503,12 +1698,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 66,
     "name": "다랑어",
     "place": Array [
       "pier",
     ],
     "price": 7000,
+    "shadowSize": 6,
   },
   Object {
     "applyHours": Array [
@@ -1528,12 +1726,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 67,
     "name": "청새치",
     "place": Array [
       "pier",
     ],
     "price": 10000,
+    "shadowSize": 6,
   },
   Object {
     "applyHours": Array [
@@ -1550,12 +1751,15 @@ Array [
       8,
       9,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 68,
     "name": "무명갈전갱이",
     "place": Array [
       "pier",
     ],
     "price": 4500,
+    "shadowSize": 5,
   },
   Object {
     "applyHours": Array [
@@ -1572,12 +1776,15 @@ Array [
       8,
       9,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 69,
     "name": "만새기",
     "place": Array [
       "pier",
     ],
     "price": 6000,
+    "shadowSize": 5,
   },
   Object {
     "applyHours": Array [
@@ -1591,12 +1798,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": true,
+    "hasSound": false,
     "id": 70,
     "name": "개복치",
     "place": Array [
       "ocean",
     ],
     "price": 4000,
+    "shadowSize": 6,
   },
   Object {
     "applyHours": Array [
@@ -1611,12 +1821,15 @@ Array [
       9,
       10,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 71,
     "name": "가오리",
     "place": Array [
       "ocean",
     ],
     "price": 3000,
+    "shadowSize": 5,
   },
   Object {
     "applyHours": Array [
@@ -1631,12 +1844,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": true,
+    "hasSound": false,
     "id": 72,
     "name": "톱상어",
     "place": Array [
       "ocean",
     ],
     "price": 12000,
+    "shadowSize": 6,
   },
   Object {
     "applyHours": Array [
@@ -1651,12 +1867,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": true,
+    "hasSound": false,
     "id": 73,
     "name": "귀상어",
     "place": Array [
       "ocean",
     ],
     "price": 8000,
+    "shadowSize": 6,
   },
   Object {
     "applyHours": Array [
@@ -1671,12 +1890,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": true,
+    "hasSound": false,
     "id": 74,
     "name": "상어",
     "place": Array [
       "ocean",
     ],
     "price": 15000,
+    "shadowSize": 6,
   },
   Object {
     "applyHours": Array [
@@ -1691,12 +1913,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": true,
+    "hasSound": false,
     "id": 75,
     "name": "고래상어",
     "place": Array [
       "ocean",
     ],
     "price": 13000,
+    "shadowSize": 6,
   },
   Object {
     "applyHours": Array [
@@ -1711,12 +1936,15 @@ Array [
       7,
       8,
     ],
+    "hasFin": true,
+    "hasSound": false,
     "id": 76,
     "name": "빨판상어",
     "place": Array [
       "ocean",
     ],
     "price": 1500,
+    "shadowSize": 4,
   },
   Object {
     "applyHours": Array [
@@ -1732,12 +1960,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 77,
     "name": "초롱아귀",
     "place": Array [
       "ocean",
     ],
     "price": 2500,
+    "shadowSize": 4,
   },
   Object {
     "applyHours": Array [
@@ -1754,12 +1985,15 @@ Array [
       4,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 78,
     "name": "산갈치",
     "place": Array [
       "ocean",
     ],
     "price": 9000,
+    "shadowSize": 6,
   },
   Object {
     "applyHours": Array [
@@ -1782,12 +2016,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 79,
     "name": "데메니기스",
     "place": Array [
       "ocean",
     ],
     "price": 15000,
+    "shadowSize": 2,
   },
   Object {
     "applyHours": Array [
@@ -1810,12 +2047,15 @@ Array [
       10,
       11,
     ],
+    "hasFin": false,
+    "hasSound": false,
     "id": 80,
     "name": "실러캔스",
     "place": Array [
       "ocean",
     ],
     "price": 15000,
+    "shadowSize": 6,
   },
 ]
 `;

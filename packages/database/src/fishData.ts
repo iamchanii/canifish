@@ -1,4 +1,70 @@
-import { FishPlace, Fish } from './fish';
+import { FishPlace, Fish, FishShadowSize } from './fish';
+
+export const parseRow = (row: string): Fish => {
+  const [
+    idText,
+    nameText,
+    priceText,
+    shadowSizeText,
+    placeText,
+    appearanceTimeText,
+    ...appearanceMonthsTextArray
+  ] = row.split(/\t/);
+
+  const { shadowSize, hasSound, hasFin } = parseShadowSize(shadowSizeText);
+  const applyHours = parseApplyHours(appearanceTimeText);
+  const applyMonths = parseApplyMonths(appearanceMonthsTextArray);
+
+  return {
+    id: +idText,
+    name: nameText,
+    price: +priceText,
+    place: parsePlaceText(placeText),
+    shadowSize,
+    hasFin,
+    hasSound,
+    applyHours,
+    applyMonths,
+  };
+};
+
+/**
+ * 그림자 크기 텍스트를 FishShadowSize 타입으로 반환하는 함수
+ * @param shadowSizeText 그림자 크기 텍스트 또는 숫자
+ */
+export const parseShadowSize = (
+  shadowSizeText: string,
+): { shadowSize: FishShadowSize; hasFin: boolean; hasSound: boolean } => {
+  let shadowSize: FishShadowSize = null;
+
+  switch (true) {
+    // 숫자가 포함되어 있는 경우 해당 숫자를 사용.
+    case isNumeric(shadowSizeText):
+      shadowSize = +shadowSizeText.replace(/\D/g, '');
+      break;
+    // 가늘다는 텍스트가 있으면 narrow 반환.
+    case isContainNarrow(shadowSizeText):
+      shadowSize = 'narrow';
+      break;
+    default:
+      throw TypeError(`유효하지 않은 그림자 텍스트입니다: ${shadowSizeText}`);
+  }
+
+  // 지느러미와 울음소리를 파싱
+  const hasFin = isContainFin(shadowSizeText);
+  const hasSound = isContainSound(shadowSizeText);
+
+  return {
+    shadowSize,
+    hasFin,
+    hasSound,
+  };
+};
+
+const isNumeric = (source: string) => /\d/.test(source);
+const isContainNarrow = (source: string) => /김/.test(source);
+const isContainFin = (source: string) => /지느러미/.test(source);
+const isContainSound = (source: string) => /울음소리/.test(source);
 
 /**
  * 장소 텍스트를 FishPlace 타입으로 반환하는 함수
@@ -51,31 +117,6 @@ export const parseApplyMonths = (applyMonthsTextArray: string[]): number[] => {
   return applyMonthsTextArray.reduce((acc, value, index) => {
     return !!value ? [...acc, index] : acc;
   }, []);
-};
-
-export const parseRow = (row: string): Fish => {
-  const [
-    idText,
-    nameText,
-    priceText,
-    ,
-    placeText,
-    appearanceTimeText,
-    ...appearanceMonthsTextArray
-  ] = row.split(/\t/);
-
-  const applyHours = parseApplyHours(appearanceTimeText);
-
-  const applyMonths = parseApplyMonths(appearanceMonthsTextArray);
-
-  return {
-    id: +idText,
-    name: nameText,
-    price: +priceText,
-    place: parsePlaceText(placeText),
-    applyHours,
-    applyMonths,
-  };
 };
 
 const parseSpreadsheet = (source: string): Fish[] =>
