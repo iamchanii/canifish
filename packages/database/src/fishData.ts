@@ -1,5 +1,9 @@
 import { FishPlace, Fish, FishShadowSize } from './fish';
 
+/**
+ * 물고기 도감 텍스트를 파싱하여 물고기 정보로 반환하는 함수
+ * @param row
+ */
 export const parseRow = (row: string): Fish => {
   const [
     idText,
@@ -11,7 +15,9 @@ export const parseRow = (row: string): Fish => {
     ...appearanceMonthsTextArray
   ] = row.split(/\t/);
 
-  const { shadowSize, hasSound, hasFin } = parseShadowSize(shadowSizeText);
+  const { shadowSize, hasSound, hasFin } = parseDataFromShadowSizeText(
+    shadowSizeText,
+  );
   const applyHours = parseApplyHours(appearanceTimeText);
   const applyMonths = parseApplyMonths(appearanceMonthsTextArray);
 
@@ -29,41 +35,42 @@ export const parseRow = (row: string): Fish => {
 };
 
 /**
- * 그림자 크기 텍스트를 FishShadowSize 타입으로 반환하는 함수
+ * 그림자 크기 텍스트를 바탕으로 그림자와 지느러미, 울음소리 여부를 파싱하는 함수
  * @param shadowSizeText 그림자 크기 텍스트 또는 숫자
  */
-export const parseShadowSize = (
+export const parseDataFromShadowSizeText = (
   shadowSizeText: string,
 ): { shadowSize: FishShadowSize; hasFin: boolean; hasSound: boolean } => {
-  let shadowSize: FishShadowSize = null;
-
-  switch (true) {
-    // 숫자가 포함되어 있는 경우 해당 숫자를 사용.
-    case isNumeric(shadowSizeText):
-      shadowSize = +shadowSizeText.replace(/\D/g, '');
-      break;
-    // 가늘다는 텍스트가 있으면 narrow 반환.
-    case isContainNarrow(shadowSizeText):
-      shadowSize = 'narrow';
-      break;
-    default:
-      throw TypeError(`유효하지 않은 그림자 텍스트입니다: ${shadowSizeText}`);
-  }
-
-  // 지느러미와 울음소리를 파싱
+  const shadowSize = parseShadowSize(shadowSizeText);
   const hasFin = isContainFin(shadowSizeText);
   const hasSound = isContainSound(shadowSizeText);
 
-  return {
-    shadowSize,
-    hasFin,
-    hasSound,
-  };
+  return { shadowSize, hasFin, hasSound };
+};
+
+/**
+ * 그림자 크기 텍스트를 바탕으로 FishShadowSize 타입을 반환하는 함수
+ * @param shadowSizeText 그림자 크기 텍스트 또는 숫자
+ */
+const parseShadowSize = (shadowSizeText: string): FishShadowSize => {
+  switch (true) {
+    // 숫자가 포함되어 있는 경우 해당 숫자를 사용.
+    case isNumeric(shadowSizeText):
+      return +shadowSizeText.replace(/\D/g, '');
+    // 가늘다는 텍스트가 있으면 narrow 반환.
+    case isContainNarrow(shadowSizeText):
+      return 'narrow';
+    default:
+      throw TypeError(`유효하지 않은 그림자 텍스트입니다: ${shadowSizeText}`);
+  }
 };
 
 const isNumeric = (source: string) => /\d/.test(source);
+
 const isContainNarrow = (source: string) => /김/.test(source);
+
 const isContainFin = (source: string) => /지느러미/.test(source);
+
 const isContainSound = (source: string) => /울음소리/.test(source);
 
 /**
