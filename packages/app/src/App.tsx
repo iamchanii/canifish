@@ -1,12 +1,12 @@
 /* @jsx jsx */
 
 import React, { Suspense } from 'react';
-import FishList from './components/fish/FishList';
+import FishListContainer from './components/fish/FishListContainer';
 import { css, jsx } from '@emotion/core';
 import { colors } from '@canifish/ui';
 
 const style = css`
-  background: ${colors.beige};
+  background: ${colors.appBgColor};
   padding: 2rem 0;
 
   h1 {
@@ -22,7 +22,7 @@ function App() {
       <h1>Can I Fish?</h1>
 
       <Suspense fallback="Loading...">
-        <FishList />
+        <FishListContainer />
       </Suspense>
     </main>
   );
