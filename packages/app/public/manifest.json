@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Can I Fish?",
+  "name": "모여봐요 동물의 숲 물고기 도감",
   "icons": [
     {
       "src": "favicon.ico",
