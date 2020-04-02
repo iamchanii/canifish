@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './fontObserver';
+import detectBrowser from './detectBrowser';
+
+detectBrowser();
 
 const { createRoot } = ReactDOM as any;
 const rootNode = document.getElementById('root');
