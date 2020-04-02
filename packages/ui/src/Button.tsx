@@ -19,7 +19,7 @@ const style = css`
   /** 비활성 상태일 때의 스타일 */
   &:disabled {
     color: ${colors.gray};
-    background: ${colors.lightgray};
+    background: ${colors.lightGray};
   }
 `;
 

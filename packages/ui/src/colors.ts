@@ -9,4 +9,6 @@ export default {
   beige: '#F5F2E7',
   white: '#FFF',
   appBgColor: '#FBFAF8',
+  gray: '#ADB5BD',
+  lightGray: '#E9ECEF',
 } as const;
