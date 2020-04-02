@@ -125,6 +125,7 @@ const informationStyle = css`
     color: ${colors.lightBrown};
     font-weight: 800;
     font-size: 0.75rem;
+    letter-spacing: -0.04em;
     display: flex;
     align-items: center;
     margin: 0.125rem 0;
