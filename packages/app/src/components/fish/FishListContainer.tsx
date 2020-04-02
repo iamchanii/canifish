@@ -54,10 +54,6 @@ const reduceFishesFromNow = (
   return fishes.reduce<ReduceFishesResult>(
     (acc, fish) => {
       const { applyHours, applyMonths } = fish;
-      if (fish.name === '피라미') {
-        console.log({ applyMonths, applyHours, name: fish.name, nowHours });
-      }
-
       const isAvailableNow =
         applyMonths.includes(nowMonth) &&
         isApplyTimeFromNow(applyHours, nowHours);
