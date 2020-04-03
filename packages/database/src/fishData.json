@@ -8,7 +8,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 10, 11]
+    "applyMonths": [0, 1, 2, 10, 11],
+    "imageUrl": "bitterling.png"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[9, 16]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "pale_chub.png"
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "crucian_carp.png"
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "dace.png"
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "carp.png"
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "koi.png"
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "goldfish.png"
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[9, 16]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "pop-eyed_goldfish.png"
   },
   {
     "id": 9,
@@ -96,7 +104,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[9, 16]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "ranchu_goldfish.png"
   },
   {
     "id": 10,
@@ -107,7 +116,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [3, 4, 5, 6, 7]
+    "applyMonths": [3, 4, 5, 6, 7],
+    "imageUrl": "killifish.png"
   },
   {
     "id": 11,
@@ -118,7 +128,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [3, 4, 5, 6, 7, 8]
+    "applyMonths": [3, 4, 5, 6, 7, 8],
+    "imageUrl": "crawfish.png"
   },
   {
     "id": 12,
@@ -129,7 +140,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [7, 8]
+    "applyMonths": [7, 8],
+    "imageUrl": "soft-shelled_turtle.png"
   },
   {
     "id": 13,
@@ -140,7 +152,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[21, 4]],
-    "applyMonths": [3, 4, 5, 6, 7, 8, 9]
+    "applyMonths": [3, 4, 5, 6, 7, 8, 9],
+    "imageUrl": "snapping_turtle.png"
   },
   {
     "id": 14,
@@ -151,7 +164,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [2, 3, 4, 5, 6]
+    "applyMonths": [2, 3, 4, 5, 6],
+    "imageUrl": "tadpole.png"
   },
   {
     "id": 15,
@@ -162,7 +176,8 @@
     "hasFin": false,
     "hasSound": true,
     "applyHours": [[0, 23]],
-    "applyMonths": [4, 5, 6, 7]
+    "applyMonths": [4, 5, 6, 7],
+    "imageUrl": "frog.png"
   },
   {
     "id": 16,
@@ -173,7 +188,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "freshwater_goby.png"
   },
   {
     "id": 17,
@@ -184,7 +200,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [2, 3, 4]
+    "applyMonths": [2, 3, 4],
+    "imageUrl": "loach.png"
   },
   {
     "id": 18,
@@ -195,7 +212,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [4, 5, 6, 7, 8, 9]
+    "applyMonths": [4, 5, 6, 7, 8, 9],
+    "imageUrl": "catfish.png"
   },
   {
     "id": 19,
@@ -206,7 +224,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[9, 16]],
-    "applyMonths": [5, 6, 7]
+    "applyMonths": [5, 6, 7],
+    "imageUrl": "giant_snakehead.png"
   },
   {
     "id": 20,
@@ -217,7 +236,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[9, 16]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "bluegill.png"
   },
   {
     "id": 21,
@@ -228,7 +248,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 9, 10, 11],
+    "imageUrl": "yellow_perch.png"
   },
   {
     "id": 22,
@@ -239,7 +260,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "black_bass.png"
   },
   {
     "id": 23,
@@ -250,7 +272,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [5, 6, 7, 8, 9]
+    "applyMonths": [5, 6, 7, 8, 9],
+    "imageUrl": "tilapia.png"
   },
   {
     "id": 24,
@@ -261,7 +284,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [8, 9, 10, 11]
+    "applyMonths": [8, 9, 10, 11],
+    "imageUrl": "pike.png"
   },
   {
     "id": 25,
@@ -272,7 +296,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 11]
+    "applyMonths": [0, 1, 11],
+    "imageUrl": "pond_smelt.png"
   },
   {
     "id": 26,
@@ -283,7 +308,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [6, 7, 8]
+    "applyMonths": [6, 7, 8],
+    "imageUrl": "sweetfish.png"
   },
   {
     "id": 27,
@@ -294,7 +320,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [2, 3, 4, 5, 8, 9, 10]
+    "applyMonths": [2, 3, 4, 5, 8, 9, 10],
+    "imageUrl": "cherry_salmon.png"
   },
   {
     "id": 28,
@@ -305,7 +332,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [2, 3, 4, 5, 8, 9, 10]
+    "applyMonths": [2, 3, 4, 5, 8, 9, 10],
+    "imageUrl": "char.png"
   },
   {
     "id": 29,
@@ -316,7 +344,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [2, 3, 4, 8, 9, 10]
+    "applyMonths": [2, 3, 4, 8, 9, 10],
+    "imageUrl": "golden_trout.png"
   },
   {
     "id": 30,
@@ -327,7 +356,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [0, 1, 2, 11]
+    "applyMonths": [0, 1, 2, 11],
+    "imageUrl": "stringfish.png"
   },
   {
     "id": 31,
@@ -338,7 +368,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [8]
+    "applyMonths": [8],
+    "imageUrl": "salmon.png"
   },
   {
     "id": 32,
@@ -349,7 +380,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [8]
+    "applyMonths": [8],
+    "imageUrl": "king_salmon.png"
   },
   {
     "id": 33,
@@ -360,7 +392,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [8, 9, 10]
+    "applyMonths": [8, 9, 10],
+    "imageUrl": "mitten_crab.png"
   },
   {
     "id": 34,
@@ -371,7 +404,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[9, 16]],
-    "applyMonths": [3, 4, 5, 6, 7, 8, 9, 10]
+    "applyMonths": [3, 4, 5, 6, 7, 8, 9, 10],
+    "imageUrl": "guppy.png"
   },
   {
     "id": 35,
@@ -382,7 +416,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[9, 16]],
-    "applyMonths": [4, 5, 6, 7, 8]
+    "applyMonths": [4, 5, 6, 7, 8],
+    "imageUrl": "nibble_fish.png"
   },
   {
     "id": 36,
@@ -393,7 +428,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [4, 5, 6, 7, 8, 9]
+    "applyMonths": [4, 5, 6, 7, 8, 9],
+    "imageUrl": "angelfish.png"
   },
   {
     "id": 37,
@@ -404,7 +440,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[9, 16]],
-    "applyMonths": [4, 5, 6, 7, 8, 9]
+    "applyMonths": [4, 5, 6, 7, 8, 9],
+    "imageUrl": "betta.png"
   },
   {
     "id": 38,
@@ -415,7 +452,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[9, 16]],
-    "applyMonths": [3, 4, 5, 6, 7, 8, 9, 10]
+    "applyMonths": [3, 4, 5, 6, 7, 8, 9, 10],
+    "imageUrl": "neon_tetra.png"
   },
   {
     "id": 39,
@@ -426,7 +464,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[9, 16]],
-    "applyMonths": [4, 5, 6, 7, 8, 9]
+    "applyMonths": [4, 5, 6, 7, 8, 9],
+    "imageUrl": "rainbowfish.png"
   },
   {
     "id": 40,
@@ -440,7 +479,8 @@
       [9, 16],
       [21, 4]
     ],
-    "applyMonths": [5, 6, 7, 8]
+    "applyMonths": [5, 6, 7, 8],
+    "imageUrl": "piranha.png"
   },
   {
     "id": 41,
@@ -451,7 +491,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [5, 6, 7, 8]
+    "applyMonths": [5, 6, 7, 8],
+    "imageUrl": "arowana.png"
   },
   {
     "id": 42,
@@ -462,7 +503,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[4, 21]],
-    "applyMonths": [5, 6, 7, 8]
+    "applyMonths": [5, 6, 7, 8],
+    "imageUrl": "dorado.png"
   },
   {
     "id": 43,
@@ -473,7 +515,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [5, 6, 7, 8]
+    "applyMonths": [5, 6, 7, 8],
+    "imageUrl": "gar.png"
   },
   {
     "id": 44,
@@ -484,7 +527,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [5, 6, 7, 8]
+    "applyMonths": [5, 6, 7, 8],
+    "imageUrl": "arapaima.png"
   },
   {
     "id": 45,
@@ -495,7 +539,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[21, 4]],
-    "applyMonths": [5, 6, 7, 8]
+    "applyMonths": [5, 6, 7, 8],
+    "imageUrl": "saddled_bichir.png"
   },
   {
     "id": 46,
@@ -506,7 +551,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 8, 9, 10, 11],
+    "imageUrl": "sturgeon.png"
   },
   {
     "id": 47,
@@ -517,7 +563,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 11]
+    "applyMonths": [0, 1, 2, 11],
+    "imageUrl": "sea_butterfly.png"
   },
   {
     "id": 48,
@@ -528,7 +575,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [3, 4, 5, 6, 7, 8, 9, 10]
+    "applyMonths": [3, 4, 5, 6, 7, 8, 9, 10],
+    "imageUrl": "sea_horse.png"
   },
   {
     "id": 49,
@@ -539,7 +587,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [3, 4, 5, 6, 7, 8]
+    "applyMonths": [3, 4, 5, 6, 7, 8],
+    "imageUrl": "clown_fish.png"
   },
   {
     "id": 50,
@@ -550,7 +599,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [3, 4, 5, 6, 7, 8]
+    "applyMonths": [3, 4, 5, 6, 7, 8],
+    "imageUrl": "surgeonfish.png"
   },
   {
     "id": 51,
@@ -561,7 +611,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [3, 4, 5, 6, 7, 8]
+    "applyMonths": [3, 4, 5, 6, 7, 8],
+    "imageUrl": "butterfly_fish.png"
   },
   {
     "id": 52,
@@ -572,7 +623,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[4, 21]],
-    "applyMonths": [6, 7]
+    "applyMonths": [6, 7],
+    "imageUrl": "napoleonfish.png"
   },
   {
     "id": 53,
@@ -583,7 +635,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [3, 4, 5, 6, 7, 8, 9, 10]
+    "applyMonths": [3, 4, 5, 6, 7, 8, 9, 10],
+    "imageUrl": "zebra_turkeyfish.png"
   },
   {
     "id": 54,
@@ -594,7 +647,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[21, 4]],
-    "applyMonths": [0, 1, 10, 11]
+    "applyMonths": [0, 1, 10, 11],
+    "imageUrl": "blowfish.png"
   },
   {
     "id": 55,
@@ -605,7 +659,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [6, 7, 8]
+    "applyMonths": [6, 7, 8],
+    "imageUrl": "puffer_fish.png"
   },
   {
     "id": 56,
@@ -616,7 +671,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[4, 21]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "anchovy.png"
   },
   {
     "id": 57,
@@ -627,7 +683,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "horse_mackerel.png"
   },
   {
     "id": 58,
@@ -638,7 +695,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [2, 3, 4, 5, 6, 7, 8, 9, 10]
+    "applyMonths": [2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "imageUrl": "barred_knifejaw.png"
   },
   {
     "id": 59,
@@ -649,7 +707,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "sea_bass.png"
   },
   {
     "id": 60,
@@ -660,7 +719,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "red_snapper.png"
   },
   {
     "id": 61,
@@ -671,7 +731,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 3, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 9, 10, 11],
+    "imageUrl": "dab.png"
   },
   {
     "id": 62,
@@ -682,7 +743,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "olive_flounder.png"
   },
   {
     "id": 63,
@@ -693,7 +755,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 11],
+    "imageUrl": "squid.png"
   },
   {
     "id": 64,
@@ -704,7 +767,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [7, 8, 9]
+    "applyMonths": [7, 8, 9],
+    "imageUrl": "moray_eel.png"
   },
   {
     "id": 65,
@@ -715,7 +779,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [5, 6, 7, 8, 9]
+    "applyMonths": [5, 6, 7, 8, 9],
+    "imageUrl": "ribbon_eel.png"
   },
   {
     "id": 66,
@@ -726,7 +791,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 3, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 10, 11],
+    "imageUrl": "tuna.png"
   },
   {
     "id": 67,
@@ -737,7 +803,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 3, 6, 7, 8, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 6, 7, 8, 10, 11],
+    "imageUrl": "blue_marlin.png"
   },
   {
     "id": 68,
@@ -748,7 +815,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [4, 5, 6, 7, 8, 9]
+    "applyMonths": [4, 5, 6, 7, 8, 9],
+    "imageUrl": "giant_trevally.png"
   },
   {
     "id": 69,
@@ -759,7 +827,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [4, 5, 6, 7, 8, 9]
+    "applyMonths": [4, 5, 6, 7, 8, 9],
+    "imageUrl": "mahi-mahi.png"
   },
   {
     "id": 70,
@@ -770,7 +839,8 @@
     "hasFin": true,
     "hasSound": false,
     "applyHours": [[4, 21]],
-    "applyMonths": [6, 7, 8]
+    "applyMonths": [6, 7, 8],
+    "imageUrl": "ocean_sunfish.png"
   },
   {
     "id": 71,
@@ -781,7 +851,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[4, 21]],
-    "applyMonths": [7, 8, 9, 10]
+    "applyMonths": [7, 8, 9, 10],
+    "imageUrl": "ray.png"
   },
   {
     "id": 72,
@@ -792,7 +863,8 @@
     "hasFin": true,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [5, 6, 7, 8]
+    "applyMonths": [5, 6, 7, 8],
+    "imageUrl": "saw_shark.png"
   },
   {
     "id": 73,
@@ -803,7 +875,8 @@
     "hasFin": true,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [5, 6, 7, 8]
+    "applyMonths": [5, 6, 7, 8],
+    "imageUrl": "hammerhead_shark.png"
   },
   {
     "id": 74,
@@ -814,7 +887,8 @@
     "hasFin": true,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [5, 6, 7, 8]
+    "applyMonths": [5, 6, 7, 8],
+    "imageUrl": "great_white_shark.png"
   },
   {
     "id": 75,
@@ -825,7 +899,8 @@
     "hasFin": true,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [5, 6, 7, 8]
+    "applyMonths": [5, 6, 7, 8],
+    "imageUrl": "whale_shark.png"
   },
   {
     "id": 76,
@@ -836,7 +911,8 @@
     "hasFin": true,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [5, 6, 7, 8]
+    "applyMonths": [5, 6, 7, 8],
+    "imageUrl": "suckerfish.png"
   },
   {
     "id": 77,
@@ -847,7 +923,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[16, 9]],
-    "applyMonths": [0, 1, 2, 10, 11]
+    "applyMonths": [0, 1, 2, 10, 11],
+    "imageUrl": "football_fish.png"
   },
   {
     "id": 78,
@@ -858,7 +935,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 3, 4, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 11],
+    "imageUrl": "oarfish.png"
   },
   {
     "id": 79,
@@ -869,7 +947,8 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[21, 4]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "barreleye.png"
   },
   {
     "id": 80,
@@ -880,6 +959,7 @@
     "hasFin": false,
     "hasSound": false,
     "applyHours": [[0, 23]],
-    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "imageUrl": "coelacanth.png"
   }
 ]

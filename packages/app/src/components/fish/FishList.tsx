@@ -17,7 +17,14 @@ const FishList: React.FC<FishListProps> = React.memo(({ fishes, listText }) => {
       <Text variant="listTitle">{listText}</Text>
       <ul css={style}>
         {fishes.map((fish) => {
-          const { place, shadowSize, hasFin, hasSound, applyHours } = fish;
+          const {
+            place,
+            shadowSize,
+            hasFin,
+            hasSound,
+            applyHours,
+            imageUrl,
+          } = fish;
           const placeText = getPlaceText(place);
           const shadowSizeText = getShadowSizeText(shadowSize, {
             hasFin,
@@ -28,6 +35,7 @@ const FishList: React.FC<FishListProps> = React.memo(({ fishes, listText }) => {
           return (
             <li key={fish.id}>
               <FishCard
+                imageUrl={`/images/fishes/${imageUrl}`}
                 name={fish.name}
                 price={fish.price}
                 place={placeText}
@@ -105,7 +113,7 @@ export const getApplyHoursText = (applyHours: [number, number][]) => {
 const isAllDay = (hours: [number, number]) => hours[0] === 0 && hours[1] === 23;
 
 const style = css`
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   padding: 0;
   display: flex;
   flex-wrap: wrap;

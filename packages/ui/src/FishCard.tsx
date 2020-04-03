@@ -18,6 +18,8 @@ export interface FishCardProps {
   shadowSize: string;
   /** 출현 기간 */
   applyMonths: number[];
+  /** 이미지 URL */
+  imageUrl: string;
 }
 
 const { format } = new Intl.NumberFormat();
@@ -29,11 +31,12 @@ export const FishCard: FC<FishCardProps> = ({
   place,
   shadowSize,
   applyMonths,
+  imageUrl,
 }) => {
   return (
     <section css={fishCardStyle}>
       <figure css={imageStyle}>
-        <img alt="" />
+        <img src={imageUrl} alt={name} />
       </figure>
       <div css={nameAndPriceAndInformationStyle}>
         <div css={nameAndPriceStyle}>
@@ -83,6 +86,11 @@ const imageStyle = css`
   background-color: ${colors.imageBgColor};
   border-radius: 9999px;
   margin: 0 0.5rem 0 0;
+
+  > img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const nameAndPriceAndInformationStyle = css`

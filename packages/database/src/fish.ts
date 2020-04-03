@@ -21,6 +21,7 @@ export interface Fish {
   hasSound: boolean;
   applyHours: [number, number][];
   applyMonths: number[];
+  imageUrl: string;
 }
 
 export const fishDatabase: Database<Fish[]> = {
