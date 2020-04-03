@@ -1,5 +1,5 @@
 import { Database } from './interface';
-import fishData from './fishData';
+import fishDataJson from './fishData.json';
 
 export type FishPlace =
   | 'river'
@@ -25,6 +25,6 @@ export interface Fish {
 
 export const fishDatabase: Database<Fish[]> = {
   async get() {
-    return fishData;
+    return fishDataJson as Fish[];
   },
 };

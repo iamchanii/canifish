@@ -2,12 +2,15 @@
   "compilerOptions": {
     "declaration": true,
     "declarationDir": "./dist",
-    "module": "es6",
+    "module": "ESNEXT",
     "noImplicitAny": true,
     "outDir": "./dist",
     "target": "es5",
     "esModuleInterop": true,
-    "lib": ["DOM", "ES5", "ES2015", "ES2016", "ES2017", "ES2018.Regexp"]
+    "lib": ["DOM", "ES5", "ES2015", "ES2016", "ES2017", "ES2018.Regexp"],
+    "moduleResolution": "node",
+    "resolveJsonModule": true
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["**/__tests__/**"]
 }
