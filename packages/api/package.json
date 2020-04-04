@@ -1,0 +1,12 @@
+{
+  "name": "@canifish/api",
+  "version": "1.0.0",
+  "description": "",
+  "author": "iamchanii",
+  "license": "MIT",
+  "types": "src/index.d.ts",
+  "devDependencies": {
+    "@now/node": "^1.5.0",
+    "typescript": "^3.8.3"
+  }
+}

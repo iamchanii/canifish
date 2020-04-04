@@ -1,5 +1,6 @@
-import { Database } from './interface';
-import fishDataJson from './fishData.json';
+import type { ApiResponse } from '@canifish/api';
+import api from './api';
+import type { Database } from './interface';
 
 export type FishPlace =
   | 'river'
@@ -26,6 +27,9 @@ export interface Fish {
 
 export const fishDatabase: Database<Fish[]> = {
   async get() {
-    return fishDataJson as Fish[];
+    const response = await fetch(api.GET_FISHES);
+    const { data } = (await response.json()) as ApiResponse<Fish[]>;
+
+    return data;
   },
 };

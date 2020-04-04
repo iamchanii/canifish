@@ -18,6 +18,13 @@ importers:
       pretty-quick: ^2.0.1
       ts-jest: ^25.2.1
       typescript: ^3.8.3
+  packages/api:
+    devDependencies:
+      '@now/node': 1.5.0
+      typescript: 3.8.3
+    specifiers:
+      '@now/node': ^1.5.0
+      typescript: ^3.8.3
   packages/app:
     dependencies:
       '@canifish/database': 'link:../database'
@@ -59,11 +66,13 @@ importers:
       typescript: ~3.7.2
   packages/database:
     devDependencies:
+      '@canifish/api': 'link:../api'
       '@rollup/plugin-json': 4.0.2_rollup@2.2.0
       rollup: 2.2.0
       rollup-plugin-typescript2: 0.26.0_rollup@2.2.0
       tslib: 1.11.1
     specifiers:
+      '@canifish/api': 'workspace:^1.0.0'
       '@rollup/plugin-json': ^4.0.2
       rollup: ^2.2.0
       rollup-plugin-typescript2: ^0.26.0
@@ -1771,6 +1780,12 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-1V9XOY4rDW0rehzbrcqAmHnz8e7SKvX27gh8Gt2WgB0+pdzdiLV83p72kZPU+jvMbS1qU5mauP2iOvO8rhmurQ==
+  /@now/node/1.5.0:
+    dependencies:
+      '@types/node': 13.11.0
+    dev: true
+    resolution:
+      integrity: sha512-0MChNIBHsViTMPDsifTveWmMpUSUbVQYAHg9Qa8p7uF7pkfBAghyCGHSKHJVg3zxx0vVE4z+rYgaRS6xvF8qMA==
   /@reach/router/1.3.3_a8152dec6edae5953f47388db9060145:
     dependencies:
       create-react-context: 0.3.0_56b688db0c3c4d1106dee0f8aa5b8e5a
@@ -2685,6 +2700,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-44/reuCrwiQEsXud3I5X3sqI5jIXAmHB5xoiyKUw965olNHF3IWKjBLKK3F9LOSUZmK+oDt8jmyO637iX+hMgA==
+  /@types/node/13.11.0:
+    dev: true
+    resolution:
+      integrity: sha512-uM4mnmsIIPK/yeO+42F2RQhGUIs39K2RFmugcJANppXe6J1nvH87PvzPZYpza7Xhhs8Yn9yIAVdLZ84z61+0xQ==
   /@types/npmlog/4.1.2:
     dev: true
     resolution:
