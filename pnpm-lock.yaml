@@ -24,7 +24,7 @@ importers:
       '@canifish/ui': 'link:../ui'
       '@emotion/core': 10.0.28_a8152dec6edae5953f47388db9060145
       '@testing-library/jest-dom': 4.2.4
-      '@testing-library/react': 9.5.0_3082f98ab4cb9cbab28a440187b78b7b
+      '@testing-library/react': 9.5.0_cfcd9d00752835ef612a4735c740efd2
       '@testing-library/user-event': 7.2.1
       '@types/fontfaceobserver': 0.0.6
       '@types/jest': 24.9.1
@@ -34,11 +34,10 @@ importers:
       css-in-js-media: 1.0.11
       fast-deep-equal: 3.1.1
       fontfaceobserver: 2.1.0
-      react-dom: 0.0.0-experimental-aae83a4b9_a8152dec6edae5953f47388db9060145
+      react: 0.0.0-experimental-d7382b6c4
+      react-dom: 0.0.0-experimental-d7382b6c4_a8152dec6edae5953f47388db9060145
       react-scripts: 3.4.1_typescript@3.7.5
       typescript: 3.7.5
-    devDependencies:
-      react: 0.0.0-experimental-d7382b6c4
     specifiers:
       '@canifish/database': 'workspace:^1.0.0'
       '@canifish/ui': 'workspace:^1.0.0'
@@ -55,7 +54,7 @@ importers:
       fast-deep-equal: ^3.1.1
       fontfaceobserver: ^2.1.0
       react: ^0.0.0-experimental-d7382b6c4
-      react-dom: ^0.0.0-experimental-aae83a4b9
+      react-dom: ^0.0.0-experimental-d7382b6c4
       react-scripts: 3.4.1
       typescript: ~3.7.2
   packages/database:
@@ -2558,13 +2557,13 @@ packages:
       npm: '>=6'
     resolution:
       integrity: sha512-j31Bn0rQo12fhCWOUWy9fl7wtqkp7In/YP2p5ZFyRuiiB9Qs3g+hS4gAmDWONbAHcRmVooNJ5eOHQDCOmUFXHg==
-  /@testing-library/react/9.5.0_3082f98ab4cb9cbab28a440187b78b7b:
+  /@testing-library/react/9.5.0_cfcd9d00752835ef612a4735c740efd2:
     dependencies:
       '@babel/runtime': 7.9.2
       '@testing-library/dom': 6.16.0
       '@types/testing-library__react': 9.1.3
       react: 0.0.0-experimental-d7382b6c4
-      react-dom: 0.0.0-experimental-aae83a4b9_a8152dec6edae5953f47388db9060145
+      react-dom: 0.0.0-experimental-d7382b6c4_a8152dec6edae5953f47388db9060145
     dev: false
     engines:
       node: '>=8'
@@ -11605,17 +11604,17 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-hUrv69k6nxazOuOmdGeOpC/ldiKy7Qj/UFpxaQi0eDMrUFUTIPGtY5HJu7BggSmiyAMfREaESbtBL9UzdQ+hyg==
-  /react-dom/0.0.0-experimental-aae83a4b9_a8152dec6edae5953f47388db9060145:
+  /react-dom/0.0.0-experimental-d7382b6c4_a8152dec6edae5953f47388db9060145:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react: 0.0.0-experimental-d7382b6c4
-      scheduler: 0.0.0-experimental-aae83a4b9
+      scheduler: 0.0.0-experimental-d7382b6c4
     dev: false
     peerDependencies:
-      react: 0.0.0-experimental-aae83a4b9
+      react: 0.0.0-experimental-d7382b6c4
     resolution:
-      integrity: sha512-9v1iVlaE/xY0z0p4RR6uXg1prueQC/IdrkdAbW93saaeTYjKG9QngceeIyqWo0uWbpubSAtaeIAbix5tjKrPJw==
+      integrity: sha512-uSnfuGM9WGom0U2sW0n2Y0jxCAEpzF3/m5vy31bLaniMxl/PdDsj9pnh4TT6/lQF3TwFYDVNTJ0UtiIiksCzPQ==
   /react-dom/16.13.1_react@16.13.1:
     dependencies:
       loose-envify: 1.4.0
@@ -12623,13 +12622,13 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-Ydydq3zC+WYDJK1+gRxRapLIED9PWeSuuS41wqyoRmzvhhh9nc+QQrVMKJYzJFULazeGhzSV0QleN2wD3boh2g==
-  /scheduler/0.0.0-experimental-aae83a4b9:
+  /scheduler/0.0.0-experimental-d7382b6c4:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: false
     resolution:
-      integrity: sha512-z0Z0TqehF/6dZbOtRcdvJBX5qUWhNs4sLddxe8VtCThTnBhK+vv5Hv6R/LP5UcE+ROk8988uTYlQExzofI7yZA==
+      integrity: sha512-QSkiFsyZ8oGJWMq8dqiF9GlWxkgTvtCRUnwOPRMfpQowCowJMMr8jW8GZ7c81kXChM6gjNlLc3YWPKHB1F8MIw==
   /scheduler/0.19.1:
     dependencies:
       loose-envify: 1.4.0
