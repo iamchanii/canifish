@@ -56,7 +56,7 @@ export const FishCard: FC<FishCardProps> = ({
       const observer = new IntersectionObserver(intersectionCallback);
       observer.observe(imageRef.current);
 
-      return observer.disconnect;
+      return () => observer?.disconnect();
     }
 
     loadImage(imageRef.current);

@@ -5,6 +5,7 @@ import { css, jsx } from '@emotion/core';
 import media, { getBreakPoints } from 'css-in-js-media';
 import React from 'react';
 import text from '../../constants/text';
+import containerStyle from '../../styles/containerStyle';
 
 export interface FishListProps {
   fishes: Fish[];
@@ -18,6 +19,9 @@ const FishList: React.FC<FishListProps> = React.memo(({ fishes, listText }) => {
       <ul css={style}>
         {fishes.map((fish) => {
           const {
+            id,
+            name,
+            price,
             place,
             shadowSize,
             hasFin,
@@ -25,6 +29,7 @@ const FishList: React.FC<FishListProps> = React.memo(({ fishes, listText }) => {
             applyHours,
             imageUrl,
             onlyRaining,
+            applyMonths,
           } = fish;
           const placeText = getPlaceText(place, { onlyRaining });
           const shadowSizeText = getShadowSizeText(shadowSize, {
@@ -34,15 +39,15 @@ const FishList: React.FC<FishListProps> = React.memo(({ fishes, listText }) => {
           const applyHoursText = getApplyHoursText(applyHours);
 
           return (
-            <li key={fish.id}>
+            <li key={id}>
               <FishCard
                 imageUrl={`/images/fishes/${imageUrl}`}
-                name={fish.name}
-                price={fish.price}
+                name={name}
+                price={price}
                 place={placeText}
                 shadowSize={shadowSizeText}
                 applyHours={applyHoursText}
-                applyMonths={fish.applyMonths}
+                applyMonths={applyMonths}
               />
             </li>
           );
@@ -120,17 +125,7 @@ const style = css`
   flex-wrap: wrap;
   list-style: none;
 
-  ${media('>=largeDesktop')} {
-    max-width: ${getBreakPoints().largeDesktop}px;
-  }
-
-  ${media('<=largeDesktop', '>desktop')} {
-    max-width: ${getBreakPoints().desktop}px;
-  }
-
-  ${media('<=desktop', '>tablet')} {
-    max-width: ${getBreakPoints().tablet}px;
-  }
+  ${containerStyle};
 
   > li {
     padding: 0.5rem;
