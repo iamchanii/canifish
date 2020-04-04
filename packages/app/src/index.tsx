@@ -8,13 +8,13 @@ import detectBrowser from './detectBrowser';
 
 detectBrowser();
 
-const { createRoot } = ReactDOM as any;
 const rootNode = document.getElementById('root');
 
-createRoot(rootNode).render(
+ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
+  rootNode,
 );
 
 // If you want your app to work offline and load faster, you can change

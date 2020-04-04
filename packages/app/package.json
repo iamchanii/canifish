@@ -1,6 +1,6 @@
 {
   "name": "@canifish/app",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "dependencies": {
     "@canifish/database": "workspace:^1.0.0",
@@ -17,8 +17,8 @@
     "css-in-js-media": "^1.0.11",
     "fast-deep-equal": "^3.1.1",
     "fontfaceobserver": "^2.1.0",
-    "react": "^0.0.0-experimental-aae83a4b9",
-    "react-dom": "^0.0.0-experimental-aae83a4b9",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "typescript": "~3.7.2"
   },

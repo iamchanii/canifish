@@ -1,6 +1,6 @@
 {
   "name": "canifish",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@changesets/cli": "^2.6.1",
     "@types/jest": "^25.1.4",
     "husky": "^4.2.3",
     "jest": "24.9.0",

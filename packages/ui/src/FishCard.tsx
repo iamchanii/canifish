@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
 import type { FC } from 'react';
+import { useRef, useEffect } from 'react';
 import { FaClock, FaFish, FaMapPin } from 'react-icons/fa';
 import { ApplyMonths } from './ApplyMonths';
 import colors from './colors';
@@ -33,10 +34,38 @@ export const FishCard: FC<FishCardProps> = ({
   applyMonths,
   imageUrl,
 }) => {
+  const imageRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    const loadImage = (imageElement: HTMLImageElement) => {
+      imageElement.src = imageElement.dataset.src;
+      imageElement.classList.add('loaded');
+    };
+
+    if ('IntersectionObserver' in window) {
+      const intersectionCallback: IntersectionObserverCallback = (
+        [entry],
+        observer,
+      ) => {
+        if (entry.isIntersecting) {
+          loadImage(entry.target as HTMLImageElement);
+          observer.unobserve(entry.target);
+        }
+      };
+
+      const observer = new IntersectionObserver(intersectionCallback);
+      observer.observe(imageRef.current);
+
+      return () => observer?.disconnect();
+    }
+
+    loadImage(imageRef.current);
+  }, []);
+
   return (
     <section css={fishCardStyle}>
       <figure css={imageStyle}>
-        <img src={imageUrl} alt={name} />
+        <img ref={imageRef} data-src={imageUrl} alt={name} />
       </figure>
       <div css={nameAndPriceAndInformationStyle}>
         <div css={nameAndPriceStyle}>
@@ -90,6 +119,12 @@ const imageStyle = css`
   > img {
     width: 100%;
     height: 100%;
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+
+    &.loaded {
+      opacity: 1;
+    }
   }
 `;
 

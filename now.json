@@ -4,9 +4,18 @@
     {
       "src": "packages/app/build/**",
       "use": "@now/static"
+    },
+    {
+      "src": "packages/api/src/*.ts",
+      "use": "@now/node"
     }
   ],
   "routes": [
+    {
+      "src": "/api/fishes",
+      "methods": ["GET"],
+      "dest": "/packages/api/src/get-fishes.ts"
+    },
     {
       "src": "/(.*)",
       "dest": "/packages/app/build/$1"

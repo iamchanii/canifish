@@ -15,4 +15,7 @@ export default {
   HAS_FIN: '지느러미',
   HAS_SOUND: '울음소리',
   ALL_DAY: '하루종일 나타나요.',
+  ONLY_RAINING: '비 또는 눈',
+  NORTHERN: '북반구',
+  SOUTHERN: '남반구',
 };
