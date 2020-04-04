@@ -7,6 +7,7 @@
     "shadowSize": 1,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 10, 11],
     "imageUrl": "bitterling.png"
@@ -19,6 +20,7 @@
     "shadowSize": 1,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[9, 16]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "pale_chub.png"
@@ -31,6 +33,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "crucian_carp.png"
@@ -43,6 +46,7 @@
     "shadowSize": 3,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "dace.png"
@@ -55,6 +59,7 @@
     "shadowSize": 4,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "carp.png"
@@ -67,6 +72,7 @@
     "shadowSize": 4,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "koi.png"
@@ -79,6 +85,7 @@
     "shadowSize": 1,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "goldfish.png"
@@ -91,6 +98,7 @@
     "shadowSize": 1,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[9, 16]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "pop-eyed_goldfish.png"
@@ -103,6 +111,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[9, 16]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "ranchu_goldfish.png"
@@ -115,6 +124,7 @@
     "shadowSize": 1,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [3, 4, 5, 6, 7],
     "imageUrl": "killifish.png"
@@ -127,6 +137,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [3, 4, 5, 6, 7, 8],
     "imageUrl": "crawfish.png"
@@ -139,6 +150,7 @@
     "shadowSize": 4,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [7, 8],
     "imageUrl": "soft-shelled_turtle.png"
@@ -151,6 +163,7 @@
     "shadowSize": 5,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[21, 4]],
     "applyMonths": [3, 4, 5, 6, 7, 8, 9],
     "imageUrl": "snapping_turtle.png"
@@ -163,6 +176,7 @@
     "shadowSize": 1,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [2, 3, 4, 5, 6],
     "imageUrl": "tadpole.png"
@@ -175,6 +189,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": true,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [4, 5, 6, 7],
     "imageUrl": "frog.png"
@@ -187,6 +202,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "freshwater_goby.png"
@@ -199,6 +215,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [2, 3, 4],
     "imageUrl": "loach.png"
@@ -211,6 +228,7 @@
     "shadowSize": 4,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [4, 5, 6, 7, 8, 9],
     "imageUrl": "catfish.png"
@@ -223,6 +241,7 @@
     "shadowSize": 5,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[9, 16]],
     "applyMonths": [5, 6, 7],
     "imageUrl": "giant_snakehead.png"
@@ -235,6 +254,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[9, 16]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "bluegill.png"
@@ -247,6 +267,7 @@
     "shadowSize": 3,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 9, 10, 11],
     "imageUrl": "yellow_perch.png"
@@ -259,6 +280,7 @@
     "shadowSize": 4,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "black_bass.png"
@@ -271,6 +293,7 @@
     "shadowSize": 3,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [5, 6, 7, 8, 9],
     "imageUrl": "tilapia.png"
@@ -283,6 +306,7 @@
     "shadowSize": 5,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [8, 9, 10, 11],
     "imageUrl": "pike.png"
@@ -295,6 +319,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 11],
     "imageUrl": "pond_smelt.png"
@@ -307,6 +332,7 @@
     "shadowSize": 3,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [6, 7, 8],
     "imageUrl": "sweetfish.png"
@@ -319,6 +345,7 @@
     "shadowSize": 3,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [2, 3, 4, 5, 8, 9, 10],
     "imageUrl": "cherry_salmon.png"
@@ -331,6 +358,7 @@
     "shadowSize": 3,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [2, 3, 4, 5, 8, 9, 10],
     "imageUrl": "char.png"
@@ -343,6 +371,7 @@
     "shadowSize": 3,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [2, 3, 4, 8, 9, 10],
     "imageUrl": "golden_trout.png"
@@ -355,6 +384,7 @@
     "shadowSize": 5,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [0, 1, 2, 11],
     "imageUrl": "stringfish.png"
@@ -367,6 +397,7 @@
     "shadowSize": 4,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [8],
     "imageUrl": "salmon.png"
@@ -379,6 +410,7 @@
     "shadowSize": 6,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [8],
     "imageUrl": "king_salmon.png"
@@ -391,6 +423,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [8, 9, 10],
     "imageUrl": "mitten_crab.png"
@@ -403,6 +436,7 @@
     "shadowSize": 1,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[9, 16]],
     "applyMonths": [3, 4, 5, 6, 7, 8, 9, 10],
     "imageUrl": "guppy.png"
@@ -415,6 +449,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[9, 16]],
     "applyMonths": [4, 5, 6, 7, 8],
     "imageUrl": "nibble_fish.png"
@@ -427,6 +462,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [4, 5, 6, 7, 8, 9],
     "imageUrl": "angelfish.png"
@@ -439,6 +475,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[9, 16]],
     "applyMonths": [4, 5, 6, 7, 8, 9],
     "imageUrl": "betta.png"
@@ -451,6 +488,7 @@
     "shadowSize": 1,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[9, 16]],
     "applyMonths": [3, 4, 5, 6, 7, 8, 9, 10],
     "imageUrl": "neon_tetra.png"
@@ -463,6 +501,7 @@
     "shadowSize": 1,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[9, 16]],
     "applyMonths": [4, 5, 6, 7, 8, 9],
     "imageUrl": "rainbowfish.png"
@@ -475,6 +514,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [
       [9, 16],
       [21, 4]
@@ -490,6 +530,7 @@
     "shadowSize": 4,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [5, 6, 7, 8],
     "imageUrl": "arowana.png"
@@ -502,6 +543,7 @@
     "shadowSize": 5,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[4, 21]],
     "applyMonths": [5, 6, 7, 8],
     "imageUrl": "dorado.png"
@@ -514,6 +556,7 @@
     "shadowSize": 6,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [5, 6, 7, 8],
     "imageUrl": "gar.png"
@@ -526,6 +569,7 @@
     "shadowSize": 6,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [5, 6, 7, 8],
     "imageUrl": "arapaima.png"
@@ -538,6 +582,7 @@
     "shadowSize": 4,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[21, 4]],
     "applyMonths": [5, 6, 7, 8],
     "imageUrl": "saddled_bichir.png"
@@ -550,6 +595,7 @@
     "shadowSize": 6,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 8, 9, 10, 11],
     "imageUrl": "sturgeon.png"
@@ -562,6 +608,7 @@
     "shadowSize": 1,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 11],
     "imageUrl": "sea_butterfly.png"
@@ -574,6 +621,7 @@
     "shadowSize": 1,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [3, 4, 5, 6, 7, 8, 9, 10],
     "imageUrl": "sea_horse.png"
@@ -586,6 +634,7 @@
     "shadowSize": 1,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [3, 4, 5, 6, 7, 8],
     "imageUrl": "clown_fish.png"
@@ -598,6 +647,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [3, 4, 5, 6, 7, 8],
     "imageUrl": "surgeonfish.png"
@@ -610,6 +660,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [3, 4, 5, 6, 7, 8],
     "imageUrl": "butterfly_fish.png"
@@ -622,6 +673,7 @@
     "shadowSize": 6,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[4, 21]],
     "applyMonths": [6, 7],
     "imageUrl": "napoleonfish.png"
@@ -634,6 +686,7 @@
     "shadowSize": 3,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [3, 4, 5, 6, 7, 8, 9, 10],
     "imageUrl": "zebra_turkeyfish.png"
@@ -646,6 +699,7 @@
     "shadowSize": 3,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[21, 4]],
     "applyMonths": [0, 1, 10, 11],
     "imageUrl": "blowfish.png"
@@ -658,6 +712,7 @@
     "shadowSize": 3,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [6, 7, 8],
     "imageUrl": "puffer_fish.png"
@@ -670,6 +725,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[4, 21]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "anchovy.png"
@@ -682,6 +738,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "horse_mackerel.png"
@@ -694,6 +751,7 @@
     "shadowSize": 3,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [2, 3, 4, 5, 6, 7, 8, 9, 10],
     "imageUrl": "barred_knifejaw.png"
@@ -706,6 +764,7 @@
     "shadowSize": 5,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "sea_bass.png"
@@ -718,6 +777,7 @@
     "shadowSize": 4,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "red_snapper.png"
@@ -730,6 +790,7 @@
     "shadowSize": 3,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 3, 9, 10, 11],
     "imageUrl": "dab.png"
@@ -742,6 +803,7 @@
     "shadowSize": 5,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "olive_flounder.png"
@@ -754,6 +816,7 @@
     "shadowSize": 3,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 11],
     "imageUrl": "squid.png"
@@ -766,6 +829,7 @@
     "shadowSize": "narrow",
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [7, 8, 9],
     "imageUrl": "moray_eel.png"
@@ -778,6 +842,7 @@
     "shadowSize": "narrow",
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [5, 6, 7, 8, 9],
     "imageUrl": "ribbon_eel.png"
@@ -790,6 +855,7 @@
     "shadowSize": 6,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 3, 10, 11],
     "imageUrl": "tuna.png"
@@ -802,6 +868,7 @@
     "shadowSize": 6,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 3, 6, 7, 8, 10, 11],
     "imageUrl": "blue_marlin.png"
@@ -814,6 +881,7 @@
     "shadowSize": 5,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [4, 5, 6, 7, 8, 9],
     "imageUrl": "giant_trevally.png"
@@ -826,6 +894,7 @@
     "shadowSize": 5,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [4, 5, 6, 7, 8, 9],
     "imageUrl": "mahi-mahi.png"
@@ -838,6 +907,7 @@
     "shadowSize": 6,
     "hasFin": true,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[4, 21]],
     "applyMonths": [6, 7, 8],
     "imageUrl": "ocean_sunfish.png"
@@ -850,6 +920,7 @@
     "shadowSize": 5,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[4, 21]],
     "applyMonths": [7, 8, 9, 10],
     "imageUrl": "ray.png"
@@ -862,6 +933,7 @@
     "shadowSize": 6,
     "hasFin": true,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [5, 6, 7, 8],
     "imageUrl": "saw_shark.png"
@@ -874,6 +946,7 @@
     "shadowSize": 6,
     "hasFin": true,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [5, 6, 7, 8],
     "imageUrl": "hammerhead_shark.png"
@@ -886,6 +959,7 @@
     "shadowSize": 6,
     "hasFin": true,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [5, 6, 7, 8],
     "imageUrl": "great_white_shark.png"
@@ -898,6 +972,7 @@
     "shadowSize": 6,
     "hasFin": true,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [5, 6, 7, 8],
     "imageUrl": "whale_shark.png"
@@ -910,6 +985,7 @@
     "shadowSize": 4,
     "hasFin": true,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [5, 6, 7, 8],
     "imageUrl": "suckerfish.png"
@@ -922,6 +998,7 @@
     "shadowSize": 4,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[16, 9]],
     "applyMonths": [0, 1, 2, 10, 11],
     "imageUrl": "football_fish.png"
@@ -934,6 +1011,7 @@
     "shadowSize": 6,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 3, 4, 11],
     "imageUrl": "oarfish.png"
@@ -946,6 +1024,7 @@
     "shadowSize": 2,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": false,
     "applyHours": [[21, 4]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "barreleye.png"
@@ -958,6 +1037,7 @@
     "shadowSize": 6,
     "hasFin": false,
     "hasSound": false,
+    "onlyRaining": true,
     "applyHours": [[0, 23]],
     "applyMonths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
     "imageUrl": "coelacanth.png"

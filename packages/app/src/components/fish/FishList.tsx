@@ -24,8 +24,9 @@ const FishList: React.FC<FishListProps> = React.memo(({ fishes, listText }) => {
             hasSound,
             applyHours,
             imageUrl,
+            onlyRaining,
           } = fish;
-          const placeText = getPlaceText(place);
+          const placeText = getPlaceText(place, { onlyRaining });
           const shadowSizeText = getShadowSizeText(shadowSize, {
             hasFin,
             hasSound,
@@ -53,24 +54,24 @@ const FishList: React.FC<FishListProps> = React.memo(({ fishes, listText }) => {
 
 FishList.displayName = 'FishList';
 
-export const getPlaceText = (fishPlaces: FishPlace[]): string => {
-  return fishPlaces
-    .map((place) => {
-      switch (place) {
-        case 'river':
-          return text.PLACE_RIVER;
-        case 'mouth':
-          return text.PLACE_MOUTH;
-        case 'clifftop':
-          return text.PLACE_CLIFFTOP;
-        case 'pond':
-          return text.PLACE_POND;
-        case 'ocean':
-          return text.PLACE_OCEAN;
-        case 'pier':
-          return text.PLACE_PIER;
-      }
-    })
+const placeTextMap: { [key in FishPlace]: string } = {
+  river: text.PLACE_RIVER,
+  mouth: text.PLACE_MOUTH,
+  clifftop: text.PLACE_CLIFFTOP,
+  pond: text.PLACE_POND,
+  ocean: text.PLACE_OCEAN,
+  pier: text.PLACE_PIER,
+};
+
+export const getPlaceText = (
+  fishPlaces: FishPlace[],
+  { onlyRaining }: { onlyRaining: boolean },
+): string => {
+  return [
+    ...fishPlaces.map((place) => placeTextMap[place]),
+    onlyRaining && text.ONLY_RAINING,
+  ]
+    .filter(Boolean)
     .join(', ');
 };
 

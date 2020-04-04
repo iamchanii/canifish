@@ -20,6 +20,7 @@ export interface Fish {
   shadowSize: FishShadowSize;
   hasFin: boolean;
   hasSound: boolean;
+  onlyRaining: boolean;
   applyHours: [number, number][];
   applyMonths: number[];
   imageUrl: string;
