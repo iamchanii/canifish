@@ -9,7 +9,7 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "jsx": "preserve",
-    "lib": ["ES2015", "ES2016.Array.Include"],
+    "lib": ["ES2015", "ES2016.Array.Include", "DOM"],
     "downlevelIteration": true
   }
 }
