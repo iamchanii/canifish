@@ -9,16 +9,22 @@ import usePromise from '../../hooks/usePromise';
 import containerStyle from '../../styles/containerStyle';
 import FishList from './FishList';
 import storageKey from '../../constants/storageKey';
-
-type Hemisphere = 'northern' | 'southern';
+import { Hemisphere } from './interface';
+import groupFishesByNow from './lib/groupFishesByNow';
 
 const FishListContainer: FC = () => {
   const fishes = usePromise(fishDatabase.get);
 
+  /**
+   * 현재 시간 Date 객체.
+   */
   const [date, setDate] = useState<Date>(() => new Date());
   const nowMonth = date.getMonth();
   const nowHours = date.getHours();
 
+  /**
+   * 현재 화면에 다시 포커스가 될 때 마다 date를 갱신.
+   */
   useEffect(() => {
     const onWindowFocus = () => {
       setDate(new Date());
@@ -31,10 +37,16 @@ const FishListContainer: FC = () => {
     };
   }, []);
 
+  /**
+   * 반구(북반구, 남반구) 상태값. 초기에 로컬 스토리지에서 값을 가져옴.
+   */
   const [hemisphere, setHemisphere] = useState<Hemisphere>(
     (localStorage.getItem(storageKey.HEMISPHERE) as Hemisphere) ?? 'northern',
   );
 
+  /**
+   * 반구 변경 시 상태를 변경하고 로컬 스토리지에도 값을 저장함.
+   */
   const handleChangeHemisphere = useCallback(
     (e: React.ChangeEvent<HTMLSelectElement>) => {
       const nextHemisphere = e.target.value as Hemisphere;
@@ -44,8 +56,12 @@ const FishListContainer: FC = () => {
     [],
   );
 
+  /**
+   * 물고기 데이터 배열을 현재 월/시간과 반구를 바탕으로 분류.
+   * 자세한 내용은 해당 함수 참조.
+   */
   const { available, etc } = useMemo(
-    () => reduceFishesFromNow(fishes, nowMonth, nowHours, hemisphere),
+    () => groupFishesByNow(fishes, nowMonth, nowHours, hemisphere),
     [fishes, nowHours, nowMonth, hemisphere],
   );
 
@@ -71,46 +87,3 @@ export default FishListContainer;
 const filterStyle = css`
   padding: 0.5rem;
 `;
-
-interface ReduceFishesResult {
-  available: Fish[];
-  etc: Fish[];
-}
-
-const reduceFishesFromNow = (
-  fishes: Fish[],
-  nowMonth: number,
-  nowHours: number,
-  hemisphere: Hemisphere,
-): ReduceFishesResult => {
-  return fishes.reduce<ReduceFishesResult>(
-    (acc, fish) => {
-      const { applyHours } = fish;
-      const applyMonths =
-        hemisphere === 'southern'
-          ? fish.applyMonths.map((month) => (month + 6) % 12)
-          : fish.applyMonths;
-
-      const isAvailableNow =
-        applyMonths.includes(nowMonth) &&
-        isApplyTimeFromNow(applyHours, nowHours);
-
-      acc[isAvailableNow ? 'available' : 'etc'].push({
-        ...fish,
-        applyMonths,
-      });
-
-      return acc;
-    },
-    { available: [], etc: [] },
-  );
-};
-
-const isApplyTimeFromNow = (
-  applyHours: [number, number][],
-  nowHours: number,
-): boolean => {
-  return applyHours.some(
-    ([fromHours, endHours]) => fromHours <= nowHours || endHours > nowHours,
-  );
-};

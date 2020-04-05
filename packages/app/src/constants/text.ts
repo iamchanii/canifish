@@ -1,3 +1,6 @@
+/**
+ * 애플리케이션 내에서 사용하는 텍스트
+ */
 export default {
   PLACE_RIVER: '강',
   PLACE_MOUTH: '강(하구)',
