@@ -14,7 +14,10 @@
     {
       "src": "/api/fishes",
       "methods": ["GET"],
-      "dest": "/packages/api/src/get-fishes.ts"
+      "dest": "/packages/api/src/get-fishes.ts",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
     },
     {
       "src": "/(.*)",
