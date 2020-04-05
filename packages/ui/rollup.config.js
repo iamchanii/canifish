@@ -9,7 +9,6 @@ const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
 export default {
   input: './src/index.ts',
-  compact: process.env.NODE_ENV === 'production',
   plugins: [
     typescript({ typescript: require('typescript') }),
     peerDepsExternal(),
