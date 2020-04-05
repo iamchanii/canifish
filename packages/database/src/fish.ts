@@ -21,7 +21,7 @@ export interface Fish {
   hasFin: boolean;
   hasSound: boolean;
   onlyRaining: boolean;
-  applyHours: [number, number][];
+  applyHours: number[][];
   applyMonths: number[];
   imageUrl: string;
 }

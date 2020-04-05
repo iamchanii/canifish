@@ -5,8 +5,8 @@ import convertHoursToDate from './convertHoursToDate';
  * 물고기 출현 시간 배열을 텍스트로 반환하는 함수.
  * @param applyHours 출현 시간 배열
  */
-const getApplyHoursText = (applyHours: [number, number][]) => {
-  const callbackFn = (hours: [number, number]): string => {
+const getApplyHoursText = (applyHours: number[][]) => {
+  const callbackFn = (hours: number[]): string => {
     return isAllDay(hours) ? text.ALL_DAY : getHourTextByHoursArray(hours);
   };
 
@@ -17,13 +17,13 @@ const getApplyHoursText = (applyHours: [number, number][]) => {
  * 해당 배열이 하루 종일에 해당하는지 확인하는 함수
  * @param hours 출현 시간 배열
  */
-const isAllDay = (hours: [number, number]) => hours[0] === 0 && hours[1] === 23;
+const isAllDay = (hours: number[]) => hours[0] === 0 && hours[1] === 23;
 
 /**
  * 출현 시간 배열을 Date 객체로 변환한 뒤 시간 텍스트로 반환하는 함수.
  * @param hours 출현 시간 배열
  */
-const getHourTextByHoursArray = (hours: [number, number]): string => {
+const getHourTextByHoursArray = (hours: number[]): string => {
   const callbackFn = (hour: number) => {
     const date = convertHoursToDate(hour);
     return formatDateToHourText(date);
@@ -56,14 +56,26 @@ const getBrowserLanguage = (): string => {
 
 const language = getBrowserLanguage();
 
-const hour12ByLanguageMap: { [key: string]: boolean } = {
-  ko: false,
+const intlOptionsByLanguageMap: {
+  [key: string]: Intl.DateTimeFormatOptions;
+} = {
+  ko: {
+    hour: 'numeric',
+    hour12: false,
+  },
+  en: {
+    hour: 'numeric',
+    hour12: true,
+  },
 };
 
-const dateTimeFormat = new Intl.DateTimeFormat(language, {
-  hour: 'numeric',
-  hour12: hour12ByLanguageMap[language] ?? false,
-});
+const dateTimeFormat = new Intl.DateTimeFormat(
+  language,
+  intlOptionsByLanguageMap[language] ?? {
+    hour: 'numeric',
+    hour12: false,
+  },
+);
 
 /**
  * Date 객체를 사용하여 시간 텍스트를 반환하는 함수.

@@ -1,4 +1,4 @@
-/* @jsx jsx */
+/** @jsx jsx */
 import { Fish } from '@canifish/database';
 import { FishCard, Text } from '@canifish/ui';
 import { css, jsx } from '@emotion/core';

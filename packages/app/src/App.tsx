@@ -1,10 +1,9 @@
-/* @jsx jsx */
+/** @jsx jsx */
 
-import React, { useState, Suspense } from 'react';
-import FishListContainer from './components/fish/FishListContainer';
+import { colors } from '@canifish/ui';
 import { css, jsx } from '@emotion/core';
-import { colors, Select } from '@canifish/ui';
-import text from './constants/text';
+import { Suspense } from 'react';
+import FishListContainer from './components/fish/FishListContainer';
 
 const style = css`
   background: ${colors.appBgColor};

@@ -43,6 +43,9 @@ importers:
       react-dom: 16.13.1_react@16.13.1
       react-scripts: 3.4.1_typescript@3.7.5
       typescript: 3.7.5
+    devDependencies:
+      '@types/chance': 1.0.10
+      chance: 1.1.4
     specifiers:
       '@canifish/database': 'workspace:^1.0.0'
       '@canifish/ui': 'workspace:^1.0.0'
@@ -50,11 +53,13 @@ importers:
       '@testing-library/jest-dom': ^4.2.4
       '@testing-library/react': ^9.3.2
       '@testing-library/user-event': ^7.1.2
+      '@types/chance': ^1.0.10
       '@types/fontfaceobserver': ^0.0.6
       '@types/jest': ^24.0.0
       '@types/node': ^12.0.0
       '@types/react': ^16.9.0
       '@types/react-dom': ^16.9.0
+      chance: ^1.1.4
       css-in-js-media: ^1.0.11
       fast-deep-equal: ^3.1.1
       fontfaceobserver: ^2.1.0
@@ -2328,6 +2333,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-xH2e58elpj1X4ynnKp9qSnWlsRTIs6n3tgLGNfwAGHwePw0mulHQllV34n0T25uYSu1k0hRKkWXF890B1yS47w==
+  /@types/chance/1.0.10:
+    dev: true
+    resolution:
+      integrity: sha512-929ISFKdeE72r6VuorB5BMjuwQ+t5rx3MLsHq5i+dCM4aJVGb+EJ+mUmaEcqENzoLZuH3xkNpklBip4guQAYiA==
   /@types/color-name/1.1.1:
     resolution:
       integrity: sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
@@ -4037,6 +4046,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
+  /chance/1.1.4:
+    dev: true
+    resolution:
+      integrity: sha512-pXPDSu3knKlb6H7ahQfpq//J9mSOxYK8SMtp8MV/nRJh8aLRDIl0ipLH8At8+nVogVwtvPZzyIzY/EbcY/cLuQ==
   /character-entities-legacy/1.1.4:
     dev: true
     resolution:

@@ -12,11 +12,11 @@ const placeTextMap: { [key in FishPlace]: string } = {
 
 const getPlaceText = (
   fishPlaces: FishPlace[],
-  { onlyRaining }: { onlyRaining: boolean },
+  options: { onlyRaining?: boolean } = {},
 ): string => {
   return [
     ...fishPlaces.map((place) => placeTextMap[place]),
-    onlyRaining && text.ONLY_RAINING,
+    options.onlyRaining && text.ONLY_RAINING,
   ]
     .filter(Boolean)
     .join(', ');

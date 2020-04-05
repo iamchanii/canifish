@@ -5,7 +5,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=development rollup -c",
     "start": "cross-env NODE_ENV=production rollup -cw",
-    "test": "exit 0",
+    "test": "echo No tests",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },

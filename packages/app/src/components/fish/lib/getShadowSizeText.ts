@@ -13,13 +13,13 @@ const shadowSizeTextMap: { [key in FishShadowSize]: string } = {
 
 const getShadowSizeText = (
   shadowSize: FishShadowSize,
-  { hasFin, hasSound }: { hasFin: boolean; hasSound: boolean },
+  options: { hasFin?: boolean; hasSound?: boolean } = {},
 ): string => {
   return [
     shadowSizeTextMap[shadowSize] +
       (typeof shadowSize === 'number' ? `(${shadowSize})` : ''),
-    hasFin && text.HAS_FIN,
-    hasSound && text.HAS_SOUND,
+    options.hasFin && text.HAS_FIN,
+    options.hasSound && text.HAS_SOUND,
   ]
     .filter(Boolean)
     .join(', ');

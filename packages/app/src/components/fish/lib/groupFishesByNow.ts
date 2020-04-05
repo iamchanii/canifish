@@ -64,12 +64,12 @@ const shiftSixMonths = (month: number): number => (month + 6) % 12;
  * @param nowHours 현재 시간
  */
 const isApplyTimeFromNow = (
-  applyHours: [number, number][],
+  applyHours: number[][],
   nowHours: number,
 ): boolean => {
   const nowDateTime = convertHoursToDate(nowHours).getTime();
 
-  const callbackFn = ([fromHours, endHours]: [number, number]): boolean => {
+  const callbackFn = ([fromHours, endHours]: number[]): boolean => {
     const diffHours = Math.abs(fromHours - endHours);
 
     const fromDate = new Date();
