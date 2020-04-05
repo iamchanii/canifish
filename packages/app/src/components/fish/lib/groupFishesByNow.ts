@@ -1,5 +1,6 @@
 import { Fish } from '@canifish/database';
 import { Hemisphere } from '../interface';
+import convertHoursToDate from './convertHoursToDate';
 
 export interface ReduceFishesResult {
   available: Fish[];
@@ -66,8 +67,21 @@ const isApplyTimeFromNow = (
   applyHours: [number, number][],
   nowHours: number,
 ): boolean => {
-  const callbackFn = ([fromHours, endHours]: [number, number]) =>
-    fromHours <= nowHours || endHours > nowHours;
+  const nowDateTime = convertHoursToDate(nowHours).getTime();
+
+  const callbackFn = ([fromHours, endHours]: [number, number]): boolean => {
+    const diffHours = Math.abs(fromHours - endHours);
+
+    const fromDate = new Date();
+    fromDate.setHours(fromHours, 0, 0, 0);
+    const fromDateTime = fromDate.getTime();
+
+    const endDate = new Date(fromDate);
+    endDate.setHours(endDate.getHours() + diffHours, 0, 0, 0);
+    const endDateTime = endDate.getTime();
+
+    return fromDateTime <= nowDateTime && nowDateTime < endDateTime;
+  };
 
   return applyHours.some(callbackFn);
 };

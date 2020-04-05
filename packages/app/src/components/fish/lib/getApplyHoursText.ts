@@ -1,4 +1,5 @@
 import text from '../../../constants/text';
+import convertHoursToDate from './convertHoursToDate';
 
 /**
  * 물고기 출현 시간 배열을 텍스트로 반환하는 함수.
@@ -24,21 +25,11 @@ const isAllDay = (hours: [number, number]) => hours[0] === 0 && hours[1] === 23;
  */
 const getHourTextByHoursArray = (hours: [number, number]): string => {
   const callbackFn = (hour: number) => {
-    const date = convertHourToDate(hour);
+    const date = convertHoursToDate(hour);
     return formatDateToHourText(date);
   };
 
   return hours.map(callbackFn).join(' ~ ');
-};
-
-/**
- * 시간을 Date 객체로 변환하는 함수. 현재 날짜를 바탕으로 해당 시간으로 변경한 Date 객체를 반환.
- * @param hour 시간
- */
-const convertHourToDate = (hour: number): Date => {
-  const date = new Date();
-  date.setHours(hour, 0, 0, 0);
-  return date;
 };
 
 const FALLBACK_LANGUAGE = 'ko';
