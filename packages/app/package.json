@@ -25,7 +25,9 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build": "pnpm run build:app && pnpm run build:sw",
+    "build:app": "react-app-rewired build",
+    "build:sw": "workbox generateSW",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
   },
@@ -49,6 +51,7 @@
     "chance": "^1.1.4",
     "customize-cra": "^0.9.1",
     "react-app-rewired": "^2.1.5",
-    "webpack-bundle-analyzer": "^3.6.1"
+    "webpack-bundle-analyzer": "^3.6.1",
+    "workbox-cli": "^5.1.2"
   }
 }
