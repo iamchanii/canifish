@@ -4,10 +4,13 @@ const {
   addBundleVisualizer,
 } = require('customize-cra');
 
+const isProd = process.env.NODE_ENV === 'production';
+
 module.exports = override(
-  addWebpackAlias({
-    react: 'preact/compat',
-    'react-dom': 'preact/compat',
-  }),
+  isProd &&
+    addWebpackAlias({
+      react: 'preact/compat',
+      'react-dom': 'preact/compat',
+    }),
   addBundleVisualizer({}, true),
 );
