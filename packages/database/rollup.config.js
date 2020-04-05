@@ -1,5 +1,6 @@
-import typescript from 'rollup-plugin-typescript2';
 import json from '@rollup/plugin-json';
+import { terser } from 'rollup-plugin-terser';
+import typescript from 'rollup-plugin-typescript2';
 import pkg from './package.json';
 
 export default {
@@ -24,5 +25,6 @@ export default {
     typescript({
       typescript: require('typescript'),
     }),
+    terser(),
   ],
 };
