@@ -77,10 +77,10 @@ const isApplyTimeFromNow = (
     const fromDateTime = fromDate.getTime();
 
     const endDate = new Date(fromDate);
-    endDate.setHours(endDate.getHours() + diffHours, 0, 0, 0);
+    endDate.setHours(endDate.getHours() + diffHours, 59, 59, 999);
     const endDateTime = endDate.getTime();
 
-    return fromDateTime <= nowDateTime && nowDateTime < endDateTime;
+    return fromDateTime <= nowDateTime && nowDateTime <= endDateTime;
   };
 
   return applyHours.some(callbackFn);
