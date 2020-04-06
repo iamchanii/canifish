@@ -39,7 +39,6 @@ importers:
       css-in-js-media: 1.0.11
       fast-deep-equal: 3.1.1
       fontfaceobserver: 2.1.0
-      preact: 10.3.4
       react: 16.13.1
       react-dom: 16.13.1_react@16.13.1
       react-scripts: 3.4.1_typescript@3.7.5
@@ -69,7 +68,6 @@ importers:
       customize-cra: ^0.9.1
       fast-deep-equal: ^3.1.1
       fontfaceobserver: ^2.1.0
-      preact: ^10.3.4
       react: ^16.13.1
       react-app-rewired: ^2.1.5
       react-dom: ^16.13.1
@@ -10816,10 +10814,6 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-WuQETPMcW9Uf1/22HWUWP9lgsIC+KEHg2kozMflKjbeUtw9ujvFX6QmIfozaErDkmLWS9WEnEdEe6Uo9/BNTdQ==
-  /preact/10.3.4:
-    dev: false
-    resolution:
-      integrity: sha512-wMgzs/RGYf0I1PZf8ZFJdyU/3kCcwepJyVYe+N9FGajyQWarMoPrPfrQajcG0psPj6ySYv2cSuLYFCihvV/Qrw==
   /prelude-ls/1.1.2:
     engines:
       node: '>= 0.8.0'
