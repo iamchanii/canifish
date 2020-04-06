@@ -68,7 +68,11 @@ const FishListContainer: React.FC = () => {
   return (
     <div>
       <div css={[containerStyle, filterStyle]}>
-        <Select defaultValue={hemisphere} onChange={handleChangeHemisphere}>
+        <Select
+          id="select-hemisphere"
+          defaultValue={hemisphere}
+          onChange={handleChangeHemisphere}
+        >
           <option value="northern">{text.NORTHERN}</option>
           <option value="southern">{text.SOUTHERN}</option>
         </Select>
