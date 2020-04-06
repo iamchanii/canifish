@@ -1,7 +1,6 @@
-/* @jsx jsx */
+/** @jsx jsx */
 import { css, jsx } from '@emotion/core';
 import type { FC } from 'react';
-import colors from './colors';
 import { ApplyMonthsCell } from './ApplyMonthsCell';
 
 const range = (length: number) => [...Array(length).keys()];

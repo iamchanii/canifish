@@ -1,8 +1,8 @@
-/* @jsx jsx */
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core';
 import React, { FC, memo } from 'react';
-import { jsx, css } from '@emotion/core';
-import { colors } from '.';
 import { FaAngleDown } from 'react-icons/fa';
+import { colors } from '.';
 
 export interface SelectProps
   extends React.DetailedHTMLProps<
