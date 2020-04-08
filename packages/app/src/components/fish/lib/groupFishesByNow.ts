@@ -1,3 +1,4 @@
+import { subDays } from 'date-fns';
 import { Fish } from '@canifish/database';
 import { Hemisphere } from '../interface';
 import convertHoursToDate from './convertHoursToDate';
@@ -67,12 +68,14 @@ const isApplyTimeFromNow = (
   applyHours: number[][],
   nowHours: number,
 ): boolean => {
-  const nowDateTime = convertHoursToDate(nowHours).getTime();
+  const nowDate = convertHoursToDate(nowHours);
+  const nowDateTime = nowDate.getTime();
 
   const callbackFn = ([fromHours, endHours]: number[]): boolean => {
-    const diffHours = Math.abs(fromHours - endHours);
+    const diffHours = Math.abs(fromHours - (24 + endHours)) % 24;
+    const isBeforeFromNow = fromHours > nowHours;
 
-    const fromDate = new Date();
+    const fromDate = subDays(nowDate, Number(isBeforeFromNow));
     fromDate.setHours(fromHours, 0, 0, 0);
     const fromDateTime = fromDate.getTime();
 
