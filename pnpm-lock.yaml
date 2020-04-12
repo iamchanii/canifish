@@ -44,6 +44,7 @@ importers:
       react-dom: 16.13.1_react@16.13.1
       react-icons: 3.9.0_react@16.13.1
       react-scripts: 3.4.1_typescript@3.7.5
+      remeda: 0.0.18
       typescript: 3.7.5
     devDependencies:
       '@types/chance': 1.0.10
@@ -76,6 +77,7 @@ importers:
       react-dom: ^16.13.1
       react-icons: ^3.9.0
       react-scripts: 3.4.1
+      remeda: ^0.0.18
       typescript: ~3.7.2
       webpack-bundle-analyzer: ^3.6.1
       workbox-cli: ^5.1.2
@@ -12020,6 +12022,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Wmz5Yj9q+W1oryo8BV17JrOXZgUKVcpJ2ApE2pwnoHwhFKSk4Wp2PmFNbmJMgYSqAdFwfkoe+TSYop5Fy8wMgA==
+  /remeda/0.0.18:
+    dev: false
+    resolution:
+      integrity: sha512-kQ3MrWXXspT7GJ2R2LLs2Zi4QL1mW7d0iHR0fd3z6937CewClnmyrzhzQdagj6m9/nas2JDD6BZ1NQ4fr75VCQ==
   /remove-trailing-separator/1.1.0:
     resolution:
       integrity: sha1-wkvOKig62tW8P1jg1IJJuSN52O8=
