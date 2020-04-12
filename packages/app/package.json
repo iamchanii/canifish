@@ -3,7 +3,6 @@
   "version": "1.1.0",
   "private": true,
   "dependencies": {
-    "@canifish/database": "workspace:^1.0.0",
     "@canifish/ui": "workspace:^1.0.0",
     "@emotion/core": "^10.0.28",
     "@testing-library/jest-dom": "^4.2.4",
