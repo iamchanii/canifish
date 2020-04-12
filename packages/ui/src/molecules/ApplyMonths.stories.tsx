@@ -1,8 +1,8 @@
 import React from 'react';
-import { ApplyMonths } from './ApplyMonths';
+import ApplyMonths from './ApplyMonths';
 
 export default {
-  title: 'components|ApplyMonths',
+  title: 'molecules|ApplyMonths',
   component: ApplyMonths,
 };
 

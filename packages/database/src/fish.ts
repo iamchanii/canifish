@@ -2,15 +2,24 @@ import type { ApiResponse } from '@canifish/api';
 import api from './api';
 import type { Database } from './interface';
 
-export type FishPlace =
-  | 'river'
-  | 'clifftop'
-  | 'mouth'
-  | 'pond'
-  | 'ocean'
-  | 'pier';
+export enum FishPlace {
+  RIVER = 'river',
+  CLIFFTOP = 'clifftop',
+  MOUTH = 'mouth',
+  POND = 'pond',
+  OCEAN = 'ocean',
+  PIER = 'pier',
+}
 
-export type FishShadowSize = number | 'narrow';
+export enum FishShadowSize {
+  NARROW = 'narrow',
+  XSMALL = 1,
+  SMALL = 2,
+  MEDIUM = 3,
+  LARGE = 4,
+  XLARGE = 5,
+  XXLARGE = 6,
+}
 
 export interface Fish {
   id: number;

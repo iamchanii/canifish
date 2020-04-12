@@ -1,6 +1,6 @@
-import { FishPlace } from './../../../../../../database/src/fish';
+import { FishPlace } from '@canifish/database/src/fish';
 import { Chance } from 'chance';
-import text from '../../../../constants/text';
+import text from '../../constants/text';
 import getPlaceText from '../getPlaceText';
 
 test('river인 경우 text.PLACE_RIVER을 반환한다.', () => {

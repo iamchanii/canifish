@@ -1,5 +1,5 @@
 import { FishPlace } from '@canifish/database';
-import text from '../../../constants/text';
+import text from '../constants/text';
 
 const placeTextMap: { [key in FishPlace]: string } = {
   river: text.PLACE_RIVER,

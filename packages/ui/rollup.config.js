@@ -1,3 +1,4 @@
+import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
@@ -15,6 +16,7 @@ export default {
     resolve({ extensions }),
     babel({ extensions, include: ['src/**/*'], runtimeHelpers: true }),
     terser(),
+    commonjs(),
   ],
   output: [{ file: pkg.module, format: 'es' }],
 };

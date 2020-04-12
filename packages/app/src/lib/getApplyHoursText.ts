@@ -1,4 +1,4 @@
-import text from '../../../constants/text';
+import text from '../constants/text';
 import convertHoursToDate from './convertHoursToDate';
 
 /**

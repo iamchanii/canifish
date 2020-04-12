@@ -1,6 +1,6 @@
 import { FishShadowSize } from '@canifish/database';
 import { Chance } from 'chance';
-import text from '../../../../constants/text';
+import text from '../../constants/text';
 import getShadowSizeText from '../getShadowSizeText';
 
 test.each<[FishShadowSize, string]>([

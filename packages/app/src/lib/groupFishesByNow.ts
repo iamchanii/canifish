@@ -1,6 +1,6 @@
 import { subDays } from 'date-fns';
 import { Fish } from '@canifish/database';
-import { Hemisphere } from '../interface';
+import { Hemisphere } from '../components/fish/interface';
 import convertHoursToDate from './convertHoursToDate';
 
 export interface ReduceFishesResult {

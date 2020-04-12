@@ -1,6 +1,6 @@
 import { Chance } from 'chance';
 import getApplyHoursText from '../getApplyHoursText';
-import text from '../../../../constants/text';
+import text from '../../constants/text';
 
 test('하루 종일에 해당하는 경우 하루 종일을 반환한다.', () => {
   expect(getApplyHoursText([[0, 23]])).toContain(text.ALL_DAY);

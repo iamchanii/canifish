@@ -1,26 +1,22 @@
 /** @jsx jsx */
 import { Fish } from '@canifish/database';
-import { Text } from '@canifish/ui';
 import { css, jsx } from '@emotion/core';
 import media from 'css-in-js-media';
 import React from 'react';
-import containerStyle from '../../styles/containerStyle';
-import FishCard from '../organisms/FishCard';
 import getApplyHoursText from '../../lib/getApplyHoursText';
 import getPlaceText from '../../lib/getPlaceText';
 import getShadowSizeText from '../../lib/getShadowSizeText';
+import containerStyle from '../../styles/containerStyle';
+import FishCard from '../organisms/FishCard';
 
-export interface FishListProps {
-  /** 물고기 데이터 배열 */
+export interface FishCardListProps {
   fishes: Fish[];
-  /** 목록 상단에 표시할 텍스트 */
-  listText: string;
 }
 
 /**
  * 물고기 목록
  */
-const FishList: React.FC<FishListProps> = React.memo(({ fishes, listText }) => {
+const FishCardList: React.FC<FishCardListProps> = React.memo(({ fishes }) => {
   const getListItemByFish = (fish: Fish): React.ReactNode => {
     const {
       place,
@@ -52,15 +48,10 @@ const FishList: React.FC<FishListProps> = React.memo(({ fishes, listText }) => {
     );
   };
 
-  return (
-    <React.Fragment>
-      <Text variant="listTitle">{listText}</Text>
-      <ul css={style}>{fishes.map(getListItemByFish)}</ul>
-    </React.Fragment>
-  );
+  return <ul css={style}>{fishes.map(getListItemByFish)}</ul>;
 });
 
-FishList.displayName = 'FishList';
+FishCardList.displayName = 'FishCardList';
 
 const style = css`
   margin: 0 auto 2rem;
@@ -93,4 +84,4 @@ const style = css`
   }
 `;
 
-export default FishList;
+export default FishCardList;

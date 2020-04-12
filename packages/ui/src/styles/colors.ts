@@ -11,4 +11,4 @@ export default {
   appBgColor: '#FBFAF8',
   gray: '#ADB5BD',
   lightGray: '#E9ECEF',
-} as const;
+};

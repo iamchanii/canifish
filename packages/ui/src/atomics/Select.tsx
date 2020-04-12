@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
-import React, { FC, memo } from 'react';
+import React, { FC } from 'react';
 import { FaAngleDown } from 'react-icons/fa';
-import { colors } from '.';
+import colors from '../styles/colors';
 
 export interface SelectProps
   extends React.DetailedHTMLProps<
@@ -10,16 +10,14 @@ export interface SelectProps
     HTMLSelectElement
   > {}
 
-export const Select: FC<SelectProps> = memo((props) => {
+const Select: FC<SelectProps> = (props) => {
   return (
     <div css={style}>
       <select {...props} />
       <FaAngleDown />
     </div>
   );
-});
-
-Select.displayName = 'Select';
+};
 
 const style = css`
   position: relative;
@@ -55,3 +53,7 @@ const style = css`
     pointer-events: none;
   }
 `;
+
+Select.displayName = 'Select';
+
+export default Select;

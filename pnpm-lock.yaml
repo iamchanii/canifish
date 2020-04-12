@@ -42,6 +42,7 @@ importers:
       fontfaceobserver: 2.1.0
       react: 16.13.1
       react-dom: 16.13.1_react@16.13.1
+      react-icons: 3.9.0_react@16.13.1
       react-scripts: 3.4.1_typescript@3.7.5
       typescript: 3.7.5
     devDependencies:
@@ -73,6 +74,7 @@ importers:
       react: ^16.13.1
       react-app-rewired: ^2.1.5
       react-dom: ^16.13.1
+      react-icons: ^3.9.0
       react-scripts: 3.4.1
       typescript: ~3.7.2
       webpack-bundle-analyzer: ^3.6.1
@@ -95,9 +97,11 @@ importers:
   packages/ui:
     dependencies:
       react-icons: 3.9.0_react@16.13.1
+      react-range: 1.5.3_react@16.13.1
     devDependencies:
       '@babel/core': 7.9.0
       '@emotion/core': 10.0.28_react@16.13.1
+      '@rollup/plugin-commonjs': 11.0.2_rollup@2.2.0
       '@rollup/plugin-node-resolve': 7.1.1_rollup@2.2.0
       '@storybook/addon-actions': 5.3.17
       '@storybook/addon-docs': 5.3.17_e289a988515ae802511909d86da7c073
@@ -118,6 +122,7 @@ importers:
     specifiers:
       '@babel/core': ^7.9.0
       '@emotion/core': ^10.0.28
+      '@rollup/plugin-commonjs': ^11.0.2
       '@rollup/plugin-node-resolve': ^7.1.1
       '@storybook/addon-actions': ^5.3.17
       '@storybook/addon-docs': ^5.3.17
@@ -132,6 +137,7 @@ importers:
       react: ^16.13.1
       react-docgen-typescript-loader: ^3.7.1
       react-icons: ^3.9.0
+      react-range: ^1.5.3
       rollup: ^2.2.0
       rollup-plugin-babel: ^4.4.0
       rollup-plugin-peer-deps-external: ^2.2.2
@@ -1574,6 +1580,21 @@ packages:
       react-dom: 15.x || 16.x || 16.4.0-alpha.0911da3
     resolution:
       integrity: sha512-gOIAiFhWdiVGSVjukKeNKkCRBLmnORoTPyBihI/jLunICPgxdP30DroAvPQuf1eVfQbfGJQDJkwhJXsNPMnVWw==
+  /@rollup/plugin-commonjs/11.0.2_rollup@2.2.0:
+    dependencies:
+      '@rollup/pluginutils': 3.0.8_rollup@2.2.0
+      estree-walker: 1.0.1
+      is-reference: 1.1.4
+      magic-string: 0.25.7
+      resolve: 1.15.1
+      rollup: 2.2.0
+    dev: true
+    engines:
+      node: '>= 8.0.0'
+    peerDependencies:
+      rollup: ^1.20.0
+    resolution:
+      integrity: sha512-MPYGZr0qdbV5zZj8/2AuomVpnRVXRU5XKXb3HVniwRoRCreGlf5kOE081isNWeiLIi6IYkwTX9zE0/c7V8g81g==
   /@rollup/plugin-json/4.0.2_rollup@2.2.0:
     dependencies:
       '@rollup/pluginutils': 3.0.8_rollup@2.2.0
@@ -2404,6 +2425,10 @@ packages:
   /@types/eslint-visitor-keys/1.0.0:
     resolution:
       integrity: sha512-OCutwjDZ4aFS6PB1UZ988C4YgwlBHJd6wCeQqaLdmadZ/7e+w79+hbMUFC1QXDNCmdyoRfAFdm0RypzwR+Qpag==
+  /@types/estree/0.0.39:
+    dev: true
+    resolution:
+      integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==
   /@types/estree/0.0.44:
     dev: true
     resolution:
@@ -7728,6 +7753,12 @@ packages:
   /is-promise/2.1.0:
     resolution:
       integrity: sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=
+  /is-reference/1.1.4:
+    dependencies:
+      '@types/estree': 0.0.39
+    dev: true
+    resolution:
+      integrity: sha512-uJA/CDPO3Tao3GTrxYn6AwkM4nUPJiGGYu5+cB8qbC7WGFlrKZbiRo7SFKxUAEpFUfiHofWCXBUNhvYJMh+6zw==
   /is-regex/1.0.5:
     dependencies:
       has: 1.0.3
@@ -11521,6 +11552,15 @@ packages:
       react: 0.14.x || ^15.0.0 || ^16.0.0
     resolution:
       integrity: sha512-nmqYTx7QVjCm3WUZLeuOomna138R1luC4EqkW3hxJUrAe+3eNz3oFCLYdnPwILfn0mX1Ew2c3wctrjlUMYYUww==
+  /react-range/1.5.3_react@16.13.1:
+    dependencies:
+      react: 16.13.1
+    dev: false
+    peerDependencies:
+      react: ^16.8.0-0 || ^17.0.0-0
+      react-dom: ^16.8.0-0 || ^17.0.0-0
+    resolution:
+      integrity: sha512-+nTMlbFCb2D5ql3PKCALJG6kiUkP8U36nCpO0Vk9OSeYCHBKAgvxmumyEEANhUW5HT5A3zJUkF063XdQueJkfQ==
   /react-scripts/3.4.1_typescript@3.7.5:
     dependencies:
       '@babel/core': 7.9.0

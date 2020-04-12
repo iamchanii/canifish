@@ -1,13 +1,9 @@
 import React from 'react';
-import { Select } from './Select';
+import Select from './Select';
 
 export default {
-  title: 'components|Select',
+  title: 'atomics|Select',
   component: Select,
-};
-
-const buttonVariantOptions: any = {
-  Primary: 'primary',
 };
 
 export const select = () => {
