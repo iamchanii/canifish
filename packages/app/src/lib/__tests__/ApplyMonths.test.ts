@@ -1,6 +1,6 @@
 import { Chance } from 'chance';
 import { Hemisphere } from '../../interface';
-import { ApplyMonths } from '../ApplyMonths';
+import ApplyMonths from '../ApplyMonths';
 
 const chance = new Chance();
 

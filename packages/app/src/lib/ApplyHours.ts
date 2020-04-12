@@ -8,7 +8,7 @@ import {
 import * as R from 'remeda';
 import Clock from './Clock';
 
-export class ApplyHours {
+export default class ApplyHours {
   // TODO: react-scripts TS 3.8 지원 시 private field로 전환
   _data: number[];
   constructor(data: number[]) {

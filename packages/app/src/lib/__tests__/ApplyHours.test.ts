@@ -1,6 +1,6 @@
 import { Chance } from 'chance';
 import MockClock from '../../testing/mockClock';
-import { ApplyHours } from '../ApplyHours';
+import ApplyHours from '../ApplyHours';
 
 const chance = new Chance();
 

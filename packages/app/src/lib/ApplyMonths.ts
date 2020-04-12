@@ -1,6 +1,6 @@
 import { Hemisphere } from '../interface';
 
-export class ApplyMonths {
+export default class ApplyMonths {
   // TODO: react-scripts TS 3.8 지원 시 private field로 전환
   _data: number[];
   constructor(data: number[]) {

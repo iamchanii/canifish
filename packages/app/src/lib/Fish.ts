@@ -1,7 +1,7 @@
 import text from '../constants/text';
 import { Hemisphere } from './../interface';
-import { ApplyHours } from './ApplyHours';
-import { ApplyMonths } from './ApplyMonths';
+import ApplyHours from './ApplyHours';
+import ApplyMonths from './ApplyMonths';
 import Clock from './Clock';
 
 export enum FishPlace {
