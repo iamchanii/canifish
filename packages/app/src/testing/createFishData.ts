@@ -1,6 +1,6 @@
 import { Chance } from 'chance';
 import { FishData } from '../lib/Fish';
-import FishPlaceEnum from '../lib/FishPlace';
+import { FishPlaceEnum } from '../lib/FishPlace';
 import FishShadowSize from '../lib/FishShadowSize';
 
 /**

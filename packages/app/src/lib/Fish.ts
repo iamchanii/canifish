@@ -3,14 +3,14 @@ import { Hemisphere } from './../interface';
 import ApplyHours from './ApplyHours';
 import ApplyMonths from './ApplyMonths';
 import Clock from './Clock';
-import FishPlace from './FishPlace';
+import FishPlace, { FishPlaceEnum } from './FishPlace';
 import FishShadowSize from './FishShadowSize';
 
 export interface FishData {
   id: number;
   name: string;
   price: number;
-  place: FishPlace[];
+  place: FishPlaceEnum[];
   shadowSize: FishShadowSize;
   hasFin: boolean;
   hasSound: boolean;
@@ -19,15 +19,6 @@ export interface FishData {
   applyMonths: number[];
   imageUrl: string;
 }
-
-const placeTextMap: { [key in FishPlace]: string } = {
-  river: text.PLACE_RIVER,
-  mouth: text.PLACE_MOUTH,
-  clifftop: text.PLACE_CLIFFTOP,
-  pond: text.PLACE_POND,
-  ocean: text.PLACE_OCEAN,
-  pier: text.PLACE_PIER,
-};
 
 const shadowSizeTextMap: { [key in FishShadowSize]: string } = {
   narrow: text.SIZE_NARROW,
@@ -41,14 +32,16 @@ const shadowSizeTextMap: { [key in FishShadowSize]: string } = {
 
 export default class Fish {
   // TODO: react-scripts TS 3.8 지원 시 private field로 전환
-  _data: FishData;
-  _applyMonths: ApplyMonths;
-  _applyHours: ApplyHours[];
+  readonly _data: FishData;
+  readonly _applyMonths: ApplyMonths;
+  readonly _applyHours: ApplyHours[];
+  readonly place: FishPlace;
 
   constructor(data: FishData) {
     this._data = data;
     this._applyMonths = new ApplyMonths(data.applyMonths);
     this._applyHours = data.applyHours.map((hours) => new ApplyHours(hours));
+    this.place = new FishPlace(data.place, data.onlyRaining);
   }
 
   get data(): FishData {
@@ -65,15 +58,6 @@ export default class Fish {
 
   get name(): string {
     return this.data.name;
-  }
-
-  get placeText(): string {
-    return [
-      ...this.data.place.map((place) => placeTextMap[place]),
-      this.data.onlyRaining && text.ONLY_RAINING,
-    ]
-      .filter(Boolean)
-      .join(', ');
   }
 
   get shadowSizeText(): string {
@@ -101,10 +85,6 @@ export default class Fish {
     const [minPrice, maxPrice] = priceRange;
 
     return minPrice <= this.data.price && this.data.price <= maxPrice;
-  }
-
-  isPlaceIncludes(place: FishPlace): boolean {
-    return this.data.place.includes(place);
   }
 
   isApplyMonths(
