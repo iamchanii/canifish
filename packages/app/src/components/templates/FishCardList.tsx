@@ -4,7 +4,6 @@ import media from 'css-in-js-media';
 import React from 'react';
 import Fish from '../../lib/Fish';
 import getApplyHoursText from '../../lib/getApplyHoursText';
-import getShadowSizeText from '../../lib/getShadowSizeText';
 import containerStyle from '../../styles/containerStyle';
 import FishCard from '../organisms/FishCard';
 
@@ -17,11 +16,7 @@ export interface FishCardListProps {
  */
 const FishCardList: React.FC<FishCardListProps> = React.memo(({ fishes }) => {
   const getListItemByFish = (fish: Fish): React.ReactNode => {
-    const { hasFin, hasSound, placeText } = fish;
-    const shadowSizeText = getShadowSizeText(fish.data.shadowSize, {
-      hasFin,
-      hasSound,
-    });
+    const { placeText, shadowSizeText } = fish;
     const applyHoursText = getApplyHoursText(fish.data.applyHours);
 
     return (

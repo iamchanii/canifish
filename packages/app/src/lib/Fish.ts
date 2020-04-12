@@ -117,16 +117,6 @@ export class ApplyHours {
   }
 }
 
-export interface FishMatchOptions {
-  month?: number;
-  hemisphere?: Hemisphere;
-  priceRange?: number[];
-  place?: FishPlace;
-  shadow?: FishShadowSize;
-  hasFin?: boolean;
-  hasSound?: boolean;
-}
-
 const placeTextMap: { [key in FishPlace]: string } = {
   river: text.PLACE_RIVER,
   mouth: text.PLACE_MOUTH,
@@ -134,6 +124,16 @@ const placeTextMap: { [key in FishPlace]: string } = {
   pond: text.PLACE_POND,
   ocean: text.PLACE_OCEAN,
   pier: text.PLACE_PIER,
+};
+
+const shadowSizeTextMap: { [key in FishShadowSize]: string } = {
+  narrow: text.SIZE_NARROW,
+  1: text.SIZE_XSMALL,
+  2: text.SIZE_SMALL,
+  3: text.SIZE_MEDIUM,
+  4: text.SIZE_LARGE,
+  5: text.SIZE_XLARGE,
+  6: text.SIZE_XXLARGE,
 };
 
 export default class Fish {
@@ -168,6 +168,19 @@ export default class Fish {
     return [
       ...this.data.place.map((place) => placeTextMap[place]),
       this.data.onlyRaining && text.ONLY_RAINING,
+    ]
+      .filter(Boolean)
+      .join(', ');
+  }
+
+  get shadowSizeText(): string {
+    return [
+      shadowSizeTextMap[this.data.shadowSize] +
+        (typeof this.data.shadowSize === 'number'
+          ? `(${this.data.shadowSize})`
+          : ''),
+      this.hasFin && text.HAS_FIN,
+      this.hasSound && text.HAS_SOUND,
     ]
       .filter(Boolean)
       .join(', ');

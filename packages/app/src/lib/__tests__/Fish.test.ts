@@ -341,4 +341,35 @@ describe('Fish', () => {
       expect(fish.placeText).toContain(text.ONLY_RAINING);
     });
   });
+
+  describe('shadowSizeText', () => {
+    it.each<[FishShadowSize, string]>([
+      [FishShadowSize.NARROW, text.SIZE_NARROW],
+      [1, text.SIZE_XSMALL + '(1)'],
+      [2, text.SIZE_SMALL + '(2)'],
+      [3, text.SIZE_MEDIUM + '(3)'],
+      [4, text.SIZE_LARGE + '(4)'],
+      [5, text.SIZE_XLARGE + '(5)'],
+      [6, text.SIZE_XXLARGE + '(6)'],
+    ])('%s를 넣으면 %s를 반환한다.', (size, text) => {
+      fishData.shadowSize = size;
+      const fish = new Fish(fishData);
+
+      expect(fish.shadowSizeText).toContain(text);
+    });
+
+    it('options.hasFin 을 사용하면 text.HAS_FIN을 포함한다.', () => {
+      fishData.hasFin = true;
+      const fish = new Fish(fishData);
+
+      expect(fish.shadowSizeText).toContain(text.HAS_FIN);
+    });
+
+    it('options.hasSound 을 사용하면 text.HAS_SOUND 포함한다.', () => {
+      fishData.hasSound = true;
+      const fish = new Fish(fishData);
+
+      expect(fish.shadowSizeText).toContain(text.HAS_SOUND);
+    });
+  });
 });
