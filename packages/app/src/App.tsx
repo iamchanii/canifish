@@ -2,11 +2,9 @@
 
 import { colors } from '@canifish/ui';
 import { css, jsx } from '@emotion/core';
-import { Suspense, lazy } from 'react';
+import { lazy, Suspense } from 'react';
 
-const FishListContainer = lazy(() =>
-  import('./pages/FishListPage'),
-);
+const FishListContainer = lazy(() => import('./pages/FishListPage'));
 
 const style = css`
   background: ${colors.appBgColor};

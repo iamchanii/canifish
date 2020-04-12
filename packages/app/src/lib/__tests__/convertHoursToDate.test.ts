@@ -1,4 +1,4 @@
-import Chance from 'chance';
+import { Chance } from 'chance';
 import convertHoursToDate from '../convertHoursToDate';
 
 const chance = new Chance();
