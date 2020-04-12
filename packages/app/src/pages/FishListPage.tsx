@@ -13,6 +13,7 @@ import React from 'react';
 import FishCardList from '../components/templates/FishCardList';
 import storageKey from '../constants/storageKey';
 import text from '../constants/text';
+import useCurrentDate from '../hooks/useCurrentDate';
 import usePromise from '../hooks/usePromise';
 import { Hemisphere } from '../interface';
 import { FishPlaceEnum } from '../lib/FishPlace';
@@ -27,24 +28,9 @@ const FishListPage: React.FC = () => {
   /**
    * 현재 시간 Date 객체.
    */
-  const [date, setDate] = React.useState<Date>(() => new Date());
+  const date = useCurrentDate();
   const nowMonth = date.getMonth();
   const nowHours = date.getHours();
-
-  /**
-   * 현재 화면에 다시 포커스가 될 때 마다 date를 갱신.
-   */
-  React.useEffect(() => {
-    const onWindowFocus = () => {
-      setDate(new Date());
-    };
-
-    window.addEventListener('focus', onWindowFocus);
-
-    return () => {
-      window.addEventListener('focus', onWindowFocus);
-    };
-  }, []);
 
   /**
    * 반구(북반구, 남반구) 상태값. 초기에 로컬 스토리지에서 값을 가져옴.
