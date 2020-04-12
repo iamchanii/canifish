@@ -12,15 +12,15 @@ import {
 } from '@canifish/ui';
 import { css, jsx } from '@emotion/core';
 import React from 'react';
-import storageKey from '../../constants/storageKey';
-import text from '../../constants/text';
-import usePromise from '../../hooks/usePromise';
-import groupFishesByNow from '../../lib/groupFishesByNow';
-import containerStyle from '../../styles/containerStyle';
-import FishCardList from '../templates/FishCardList';
-import { Hemisphere } from './interface';
+import FishCardList from '../components/templates/FishCardList';
+import storageKey from '../constants/storageKey';
+import text from '../constants/text';
+import usePromise from '../hooks/usePromise';
+import { Hemisphere } from '../interface';
+import groupFishesByNow from '../lib/groupFishesByNow';
+import containerStyle from '../styles/containerStyle';
 
-const FishListContainer: React.FC = () => {
+const FishListPage: React.FC = () => {
   const fishes = usePromise(fishDatabase.get);
 
   /**
@@ -49,7 +49,8 @@ const FishListContainer: React.FC = () => {
    * 반구(북반구, 남반구) 상태값. 초기에 로컬 스토리지에서 값을 가져옴.
    */
   const [hemisphere, setHemisphere] = React.useState<Hemisphere>(
-    (localStorage.getItem(storageKey.HEMISPHERE) as Hemisphere) ?? 'northern',
+    (localStorage.getItem(storageKey.HEMISPHERE) as Hemisphere) ??
+      Hemisphere.NORTHERN,
   );
 
   /**
@@ -163,9 +164,9 @@ const FishListContainer: React.FC = () => {
   );
 };
 
-FishListContainer.displayName = 'FishListContainer';
+FishListPage.displayName = 'FishListPage';
 
-export default FishListContainer;
+export default FishListPage;
 
 const filterStyle = css`
   padding: 0.5rem;

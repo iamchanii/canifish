@@ -5,7 +5,7 @@ import { css, jsx } from '@emotion/core';
 import { Suspense, lazy } from 'react';
 
 const FishListContainer = lazy(() =>
-  import('./components/fish/FishListContainer'),
+  import('./pages/FishListPage'),
 );
 
 const style = css`

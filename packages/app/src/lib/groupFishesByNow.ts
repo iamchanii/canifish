@@ -1,6 +1,6 @@
-import { subDays } from 'date-fns';
 import { Fish } from '@canifish/database';
-import { Hemisphere } from '../components/fish/interface';
+import { subDays } from 'date-fns';
+import { Hemisphere } from '../interface';
 import convertHoursToDate from './convertHoursToDate';
 
 export interface ReduceFishesResult {
@@ -29,7 +29,7 @@ const groupFishesByNow = (
 
     // 남반구인 경우 출현 기간을 6개월씩 조정.
     const applyMonths =
-      hemisphere === 'southern'
+      hemisphere === Hemisphere.SOUTHERN
         ? fish.applyMonths.map(shiftSixMonths)
         : fish.applyMonths;
 
