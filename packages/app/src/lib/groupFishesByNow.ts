@@ -1,7 +1,5 @@
-import { Fish } from '@canifish/database';
-import { subDays } from 'date-fns';
 import { Hemisphere } from '../interface';
-import convertHoursToDate from './convertHoursToDate';
+import Fish from './Fish';
 
 export interface ReduceFishesResult {
   available: Fish[];
@@ -17,32 +15,14 @@ export interface ReduceFishesResult {
  */
 const groupFishesByNow = (
   fishes: Fish[],
-  nowMonth: number,
-  nowHours: number,
   hemisphere: Hemisphere,
 ): ReduceFishesResult => {
   const callbackFn = (
     acc: ReduceFishesResult,
     fish: Fish,
   ): ReduceFishesResult => {
-    const { applyHours } = fish;
-
-    // 남반구인 경우 출현 기간을 6개월씩 조정.
-    const applyMonths =
-      hemisphere === Hemisphere.SOUTHERN
-        ? fish.applyMonths.map(shiftSixMonths)
-        : fish.applyMonths;
-
-    // 현재 월이 출현 기간에 포함되어 있고, 현재 시간이 출현 시간 사이에 있는지 확인.
-    const isAvailableNow =
-      applyMonths.includes(nowMonth) &&
-      isApplyTimeFromNow(applyHours, nowHours);
-
-    // 현재 출현중인 물고기라면 available, 아니면 etc로 분류
-    acc[isAvailableNow ? 'available' : 'etc'].push({
-      ...fish,
-      applyMonths,
-    });
+    const isAvailableNow = fish.isApplyNow(hemisphere);
+    acc[isAvailableNow ? 'available' : 'etc'].push(fish);
 
     return acc;
   };
@@ -51,42 +31,6 @@ const groupFishesByNow = (
     available: [],
     etc: [],
   });
-};
-
-/**
- * 입력받은 수를 6씩 조정하는 함수.
- * @param month
- */
-const shiftSixMonths = (month: number): number => (month + 6) % 12;
-
-/**
- * 현재 시간이 출현 시간 배열을 기준으로 포함되는지 확인하는 함수.
- * @param applyHours 출현 시간 배열
- * @param nowHours 현재 시간
- */
-const isApplyTimeFromNow = (
-  applyHours: number[][],
-  nowHours: number,
-): boolean => {
-  const nowDate = convertHoursToDate(nowHours);
-  const nowDateTime = nowDate.getTime();
-
-  const callbackFn = ([fromHours, endHours]: number[]): boolean => {
-    const diffHours = Math.abs(fromHours - (24 + endHours)) % 24;
-    const isBeforeFromNow = fromHours > nowHours;
-
-    const fromDate = subDays(nowDate, Number(isBeforeFromNow));
-    fromDate.setHours(fromHours, 0, 0, 0);
-    const fromDateTime = fromDate.getTime();
-
-    const endDate = new Date(fromDate);
-    endDate.setHours(endDate.getHours() + diffHours, 59, 59, 999);
-    const endDateTime = endDate.getTime();
-
-    return fromDateTime <= nowDateTime && nowDateTime <= endDateTime;
-  };
-
-  return applyHours.some(callbackFn);
 };
 
 export default groupFishesByNow;

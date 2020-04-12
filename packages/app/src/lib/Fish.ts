@@ -44,18 +44,18 @@ export interface FishData {
 
 export class ApplyMonths {
   // TODO: react-scripts TS 3.8 지원 시 private field로 전환
-  data: number[];
+  _data: number[];
 
   constructor(data: number[]) {
-    this.data = data;
+    this._data = data;
   }
 
   getData(hemisphere: Hemisphere): number[] {
     if (hemisphere === Hemisphere.SOUTHERN) {
-      return this.data.map((month) => (month + 6) % 12);
+      return this._data.map((month) => (month + 6) % 12);
     }
 
-    return this.data;
+    return this._data;
   }
 
   isApply(targetMonth: number, hemisphere: Hemisphere) {
@@ -65,18 +65,18 @@ export class ApplyMonths {
 
 export class ApplyHours {
   // TODO: react-scripts TS 3.8 지원 시 private field로 전환
-  data: number[];
+  _data: number[];
 
   constructor(data: number[]) {
-    this.data = data;
+    this._data = data;
   }
 
   private get fromHours(): number {
-    return this.data[0];
+    return this._data[0];
   }
 
   private get endHours(): number {
-    return this.data[1];
+    return this._data[1];
   }
 
   private get diffHours(): number {
@@ -129,17 +129,21 @@ export interface FishMatchOptions {
 export default class Fish {
   // TODO: react-scripts TS 3.8 지원 시 private field로 전환
   _data: FishData;
-  applyMonths: ApplyMonths;
-  applyHours: ApplyHours[];
+  _applyMonths: ApplyMonths;
+  _applyHours: ApplyHours[];
 
   constructor(data: FishData) {
     this._data = data;
-    this.applyMonths = new ApplyMonths(data.applyMonths);
-    this.applyHours = data.applyHours.map((hours) => new ApplyHours(hours));
+    this._applyMonths = new ApplyMonths(data.applyMonths);
+    this._applyHours = data.applyHours.map((hours) => new ApplyHours(hours));
   }
 
   get data(): FishData {
     return this._data;
+  }
+
+  getApplyMonthsData(hemisphere: Hemisphere = Hemisphere.NORTHERN): number[] {
+    return this._applyMonths.getData(hemisphere);
   }
 
   get hasSound(): boolean {
@@ -168,13 +172,13 @@ export default class Fish {
     targetMonth: number,
     hemisphere: Hemisphere = Hemisphere.NORTHERN,
   ): boolean {
-    return this.applyMonths.isApply(targetMonth, hemisphere);
+    return this._applyMonths.isApply(targetMonth, hemisphere);
   }
 
   isApplyNow(hemisphere: Hemisphere = Hemisphere.NORTHERN): boolean {
     return (
       this.isApplyMonths(Clock.nowMonth, hemisphere) &&
-      this.applyHours.some((hours) => hours.isApplyFromNow())
+      this._applyHours.some((hours) => hours.isApplyFromNow())
     );
   }
 }

@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import { Fish } from '@canifish/database';
 import { css, jsx } from '@emotion/core';
 import media from 'css-in-js-media';
 import React from 'react';
+import Fish from '../../lib/Fish';
 import getApplyHoursText from '../../lib/getApplyHoursText';
 import getPlaceText from '../../lib/getPlaceText';
 import getShadowSizeText from '../../lib/getShadowSizeText';
@@ -18,31 +18,26 @@ export interface FishCardListProps {
  */
 const FishCardList: React.FC<FishCardListProps> = React.memo(({ fishes }) => {
   const getListItemByFish = (fish: Fish): React.ReactNode => {
-    const {
-      place,
-      shadowSize,
-      hasFin,
-      hasSound,
-      applyHours,
-      onlyRaining,
-    } = fish;
-    const placeText = getPlaceText(place, { onlyRaining });
-    const shadowSizeText = getShadowSizeText(shadowSize, {
+    const { hasFin, hasSound } = fish;
+    const placeText = getPlaceText(fish.data.place, {
+      onlyRaining: fish.data.onlyRaining,
+    });
+    const shadowSizeText = getShadowSizeText(fish.data.shadowSize, {
       hasFin,
       hasSound,
     });
-    const applyHoursText = getApplyHoursText(applyHours);
+    const applyHoursText = getApplyHoursText(fish.data.applyHours);
 
     return (
-      <li key={fish.id}>
+      <li key={fish.data.id}>
         <FishCard
-          imageUrl={`/images/fishes/${fish.imageUrl}`}
-          name={fish.name}
-          price={fish.price}
+          imageUrl={`/images/fishes/${fish.data.imageUrl}`}
+          name={fish.data.name}
+          price={fish.data.price}
           place={placeText}
           shadowSize={shadowSizeText}
           applyHours={applyHoursText}
-          applyMonths={fish.applyMonths}
+          applyMonths={fish.data.applyMonths}
         />
       </li>
     );

@@ -1,5 +1,5 @@
-import { FishShadowSize } from '@canifish/database';
 import text from '../constants/text';
+import { FishShadowSize } from './Fish';
 
 const shadowSizeTextMap: { [key in FishShadowSize]: string } = {
   narrow: text.SIZE_NARROW,

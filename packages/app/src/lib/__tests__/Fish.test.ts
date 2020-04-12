@@ -1,7 +1,7 @@
 import { Chance } from 'chance';
 import { Hemisphere } from '../../interface';
-import Clock from '../Clock';
-import createFishData from '../createFishData';
+import createFishData from '../../testing/createFishData';
+import MockClock from '../../testing/mockClock';
 import Fish, {
   ApplyHours,
   ApplyMonths,
@@ -55,18 +55,6 @@ describe('ApplyMonths', () => {
   });
 });
 
-const setClockNowHours = (hours: number): void => {
-  jest.spyOn(Clock, 'now', 'get').mockImplementation(() => {
-    const date = new Date();
-    date.setHours(hours);
-    return date;
-  });
-};
-
-const setClockNowMonth = (month: number): void => {
-  jest.spyOn(Clock, 'nowMonth', 'get').mockImplementation(() => month);
-};
-
 describe('ApplyHours', () => {
   it('하루 종일은 어떤 값을 넣어도 true가 나온다.', () => {
     const applyHours = new ApplyHours([0, 23]);
@@ -75,7 +63,7 @@ describe('ApplyHours', () => {
 
   function createTestCase(_applyHours: number[]) {
     return function (min: number, max: number, expected: boolean) {
-      setClockNowHours(chance.integer({ min, max }));
+      MockClock.setHours(chance.integer({ min, max }));
       const applyHours = new ApplyHours(_applyHours);
 
       expect(applyHours.isApplyFromNow()).toBe(expected);
@@ -264,8 +252,8 @@ describe('Fish', () => {
   describe('isApplyNow', () => {
     it('지금 출현하는 물고기인 경우 true', () => {
       const fish = new Fish(fishData);
-      setClockNowHours(fishData.applyHours[0][0]);
-      setClockNowMonth(fishData.applyMonths[0]);
+      MockClock.setHours(fishData.applyHours[0][0]);
+      MockClock.setMonths(fishData.applyMonths[0]);
 
       expect(fish.isApplyNow()).toBe(true);
     });
@@ -278,12 +266,12 @@ describe('Fish', () => {
       ];
       const fish = new Fish(fishData);
 
-      setClockNowMonth(3);
-      setClockNowHours(0);
+      MockClock.setMonths(3);
+      MockClock.setHours(0);
       expect(fish.isApplyNow()).toBe(false);
 
-      setClockNowMonth(0);
-      setClockNowHours(0);
+      MockClock.setMonths(0);
+      MockClock.setHours(0);
       expect(fish.isApplyNow()).toBe(false);
     });
   });

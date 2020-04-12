@@ -1,4 +1,4 @@
-import createFishData from '../createFishData';
+import createFishData from '../../testing/createFishData';
 import FishRepository, { GET_FISHES_API } from '../FishRepository';
 
 const mockFishData = createFishData();

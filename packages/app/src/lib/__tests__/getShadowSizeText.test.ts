@@ -1,10 +1,10 @@
-import { FishShadowSize } from '@canifish/database';
 import { Chance } from 'chance';
 import text from '../../constants/text';
 import getShadowSizeText from '../getShadowSizeText';
+import { FishShadowSize } from '../Fish';
 
 test.each<[FishShadowSize, string]>([
-  ['narrow', text.SIZE_NARROW],
+  [FishShadowSize.NARROW, text.SIZE_NARROW],
   [1, text.SIZE_XSMALL + '(1)'],
   [2, text.SIZE_SMALL + '(2)'],
   [3, text.SIZE_MEDIUM + '(3)'],
@@ -16,7 +16,15 @@ test.each<[FishShadowSize, string]>([
 });
 
 const chance = new Chance();
-const size = chance.pickone<FishShadowSize>(['narrow', 1, 2, 3, 4, 5, 6]);
+const size = chance.pickone<FishShadowSize>([
+  FishShadowSize.NARROW,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+]);
 
 test('options.hasFin 을 사용하면 text.HAS_FIN을 포함한다.', () => {
   expect(getShadowSizeText(size, { hasFin: true })).toContain(text.HAS_FIN);

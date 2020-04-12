@@ -1,6 +1,4 @@
 /** @jsx jsx */
-
-import { fishDatabase, FishPlace, FishShadowSize } from '@canifish/database';
 import {
   Button,
   Card,
@@ -17,11 +15,13 @@ import storageKey from '../constants/storageKey';
 import text from '../constants/text';
 import usePromise from '../hooks/usePromise';
 import { Hemisphere } from '../interface';
+import FishRepository from '../lib/FishRepository';
 import groupFishesByNow from '../lib/groupFishesByNow';
 import containerStyle from '../styles/containerStyle';
+import { FishPlace, FishShadowSize } from '../lib/Fish';
 
 const FishListPage: React.FC = () => {
-  const fishes = usePromise(fishDatabase.get);
+  const fishes = usePromise(FishRepository.fetch);
 
   /**
    * 현재 시간 Date 객체.
