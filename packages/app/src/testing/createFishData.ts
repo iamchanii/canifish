@@ -1,5 +1,7 @@
 import { Chance } from 'chance';
-import { FishData, FishPlace, FishShadowSize } from '../lib/Fish';
+import { FishData } from '../lib/Fish';
+import FishPlace from '../lib/FishPlace';
+import FishShadowSize from '../lib/FishShadowSize';
 
 /**
  * 테스트 용으로 사용

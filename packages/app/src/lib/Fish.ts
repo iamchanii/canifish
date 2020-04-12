@@ -3,25 +3,8 @@ import { Hemisphere } from './../interface';
 import ApplyHours from './ApplyHours';
 import ApplyMonths from './ApplyMonths';
 import Clock from './Clock';
-
-export enum FishPlace {
-  RIVER = 'river',
-  CLIFFTOP = 'clifftop',
-  MOUTH = 'mouth',
-  POND = 'pond',
-  OCEAN = 'ocean',
-  PIER = 'pier',
-}
-
-export enum FishShadowSize {
-  NARROW = 'narrow',
-  XSMALL = 1,
-  SMALL = 2,
-  MEDIUM = 3,
-  LARGE = 4,
-  XLARGE = 5,
-  XXLARGE = 6,
-}
+import FishPlace from './FishPlace';
+import FishShadowSize from './FishShadowSize';
 
 export interface FishData {
   id: number;

@@ -3,7 +3,9 @@ import text from '../../constants/text';
 import { Hemisphere } from '../../interface';
 import createFishData from '../../testing/createFishData';
 import MockClock from '../../testing/mockClock';
-import Fish, { FishData, FishPlace, FishShadowSize } from '../Fish';
+import Fish, { FishData } from '../Fish';
+import FishPlace from '../FishPlace';
+import FishShadowSize from '../FishShadowSize';
 
 const chance = new Chance();
 
