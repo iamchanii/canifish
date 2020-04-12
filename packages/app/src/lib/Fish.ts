@@ -9,6 +9,7 @@ import * as R from 'remeda';
 import text from '../constants/text';
 import { Hemisphere } from './../interface';
 import Clock from './Clock';
+import { ApplyMonths } from './ApplyMonths';
 
 export enum FishPlace {
   RIVER = 'river',
@@ -41,27 +42,6 @@ export interface FishData {
   applyHours: number[][];
   applyMonths: number[];
   imageUrl: string;
-}
-
-export class ApplyMonths {
-  // TODO: react-scripts TS 3.8 지원 시 private field로 전환
-  _data: number[];
-
-  constructor(data: number[]) {
-    this._data = data;
-  }
-
-  getData(hemisphere: Hemisphere): number[] {
-    if (hemisphere === Hemisphere.SOUTHERN) {
-      return this._data.map((month) => (month + 6) % 12);
-    }
-
-    return this._data;
-  }
-
-  isApply(targetMonth: number, hemisphere: Hemisphere) {
-    return this.getData(hemisphere).includes(targetMonth);
-  }
 }
 
 export class ApplyHours {
