@@ -23,14 +23,14 @@ export default class Fish {
   // TODO: react-scripts TS 3.8 지원 시 private field로 전환
   readonly _data: FishData;
   readonly _applyMonths: ApplyMonths;
-  readonly _applyHours: ApplyHours[];
+  readonly applyHours: ApplyHours[];
   readonly place: FishPlace;
   readonly shadowSize: FishShadowSize;
 
   constructor(data: FishData) {
     this._data = data;
     this._applyMonths = new ApplyMonths(data.applyMonths);
-    this._applyHours = data.applyHours.map((hours) => new ApplyHours(hours));
+    this.applyHours = data.applyHours.map((hours) => new ApplyHours(hours));
     this.place = new FishPlace(data.place, data.onlyRaining);
     this.shadowSize = new FishShadowSize(
       data.shadowSize,
@@ -59,10 +59,6 @@ export default class Fish {
     return this._applyMonths.getData(hemisphere);
   }
 
-  isShadowSizeEqual(shadowSize: FishShadowSizeEnum): boolean {
-    return this.data.shadowSize === shadowSize;
-  }
-
   isPriceIncludeIn(priceRange: number[]): boolean {
     const [minPrice, maxPrice] = priceRange;
 
@@ -79,7 +75,7 @@ export default class Fish {
   isApplyNow(hemisphere: Hemisphere = Hemisphere.NORTHERN): boolean {
     return (
       this.isApplyMonths(Clock.nowMonth, hemisphere) &&
-      this._applyHours.some((hours) => hours.isApplyFromNow())
+      this.applyHours.some((hours) => hours.isApplyFromNow())
     );
   }
 }

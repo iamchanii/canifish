@@ -1,12 +1,7 @@
-import { Chance } from 'chance';
-import text from '../../constants/text';
 import { Hemisphere } from '../../interface';
 import createFishData from '../../testing/createFishData';
 import MockClock from '../../testing/mockClock';
 import Fish, { FishData } from '../Fish';
-import FishShadowSizeEnum from '../FishShadowSize';
-
-const chance = new Chance();
 
 describe('Fish', () => {
   let fishData: FishData;

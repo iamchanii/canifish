@@ -3,7 +3,6 @@ import { css, jsx } from '@emotion/core';
 import media from 'css-in-js-media';
 import React from 'react';
 import Fish from '../../lib/Fish';
-import getApplyHoursText from '../../lib/getApplyHoursText';
 import containerStyle from '../../styles/containerStyle';
 import FishCard from '../organisms/FishCard';
 
@@ -16,8 +15,6 @@ export interface FishCardListProps {
  */
 const FishCardList: React.FC<FishCardListProps> = React.memo(({ fishes }) => {
   const getListItemByFish = (fish: Fish): React.ReactNode => {
-    const applyHoursText = getApplyHoursText(fish.data.applyHours);
-
     return (
       <li key={fish.data.id}>
         <FishCard
@@ -26,7 +23,7 @@ const FishCardList: React.FC<FishCardListProps> = React.memo(({ fishes }) => {
           price={fish.data.price}
           place={fish.place.toString()}
           shadowSize={fish.shadowSize.toString()}
-          applyHours={applyHoursText}
+          applyHours={fish.applyHours.toString()}
           applyMonths={fish.data.applyMonths}
         />
       </li>
