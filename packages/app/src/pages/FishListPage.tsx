@@ -71,7 +71,7 @@ const FishListPage: React.FC = () => {
    * 자세한 내용은 해당 함수 참조.
    */
   const { available, etc } = React.useMemo(
-    () => groupFishesByNow(fishes, nowMonth, nowHours, hemisphere),
+    () => groupFishesByNow(fishes, hemisphere),
     [fishes, nowHours, nowMonth, hemisphere],
   );
 
