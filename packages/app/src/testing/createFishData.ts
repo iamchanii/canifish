@@ -1,7 +1,7 @@
 import { Chance } from 'chance';
 import { FishData } from '../lib/Fish';
 import { FishPlaceEnum } from '../lib/FishPlace';
-import FishShadowSize from '../lib/FishShadowSize';
+import FishShadowSizeEnum from '../lib/FishShadowSize';
 
 /**
  * 테스트 용으로 사용
@@ -22,13 +22,13 @@ const createFishData = (): FishData => {
     FishPlaceEnum.RIVER,
   ]);
   const shadowSize = chance.pickone([
-    FishShadowSize.NARROW,
-    FishShadowSize.XSMALL,
-    FishShadowSize.SMALL,
-    FishShadowSize.MEDIUM,
-    FishShadowSize.LARGE,
-    FishShadowSize.XLARGE,
-    FishShadowSize.XXLARGE,
+    FishShadowSizeEnum.NARROW,
+    FishShadowSizeEnum.XSMALL,
+    FishShadowSizeEnum.SMALL,
+    FishShadowSizeEnum.MEDIUM,
+    FishShadowSizeEnum.LARGE,
+    FishShadowSizeEnum.XLARGE,
+    FishShadowSizeEnum.XXLARGE,
   ]);
 
   return {

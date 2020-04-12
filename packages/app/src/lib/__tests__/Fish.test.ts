@@ -4,7 +4,7 @@ import { Hemisphere } from '../../interface';
 import createFishData from '../../testing/createFishData';
 import MockClock from '../../testing/mockClock';
 import Fish, { FishData } from '../Fish';
-import FishShadowSize from '../FishShadowSize';
+import FishShadowSizeEnum from '../FishShadowSize';
 
 const chance = new Chance();
 
@@ -44,22 +44,6 @@ describe('Fish', () => {
       const fish = new Fish(fishData);
 
       expect(fish.hasFin).toBe(false);
-    });
-  });
-
-  describe('isShadowSizeEqual', () => {
-    it('그림자 크기가 일치하면 true', () => {
-      fishData.shadowSize = FishShadowSize.NARROW;
-      const fish = new Fish(fishData);
-
-      expect(fish.isShadowSizeEqual(FishShadowSize.NARROW)).toBe(true);
-    });
-
-    it('그림자 크기가 일치하지 않으면 false', () => {
-      fishData.shadowSize = FishShadowSize.NARROW;
-      const fish = new Fish(fishData);
-
-      expect(fish.isShadowSizeEqual(FishShadowSize.XLARGE)).toBe(false);
     });
   });
 
@@ -138,36 +122,5 @@ describe('Fish', () => {
     const fish = new Fish(fishData);
 
     expect(fish.name).toBe(fishData.name);
-  });
-
-  describe('shadowSizeText', () => {
-    it.each<[FishShadowSize, string]>([
-      [FishShadowSize.NARROW, text.SIZE_NARROW],
-      [1, text.SIZE_XSMALL + '(1)'],
-      [2, text.SIZE_SMALL + '(2)'],
-      [3, text.SIZE_MEDIUM + '(3)'],
-      [4, text.SIZE_LARGE + '(4)'],
-      [5, text.SIZE_XLARGE + '(5)'],
-      [6, text.SIZE_XXLARGE + '(6)'],
-    ])('%s를 넣으면 %s를 반환한다.', (size, text) => {
-      fishData.shadowSize = size;
-      const fish = new Fish(fishData);
-
-      expect(fish.shadowSizeText).toContain(text);
-    });
-
-    it('options.hasFin 을 사용하면 text.HAS_FIN을 포함한다.', () => {
-      fishData.hasFin = true;
-      const fish = new Fish(fishData);
-
-      expect(fish.shadowSizeText).toContain(text.HAS_FIN);
-    });
-
-    it('options.hasSound 을 사용하면 text.HAS_SOUND 포함한다.', () => {
-      fishData.hasSound = true;
-      const fish = new Fish(fishData);
-
-      expect(fish.shadowSizeText).toContain(text.HAS_SOUND);
-    });
   });
 });

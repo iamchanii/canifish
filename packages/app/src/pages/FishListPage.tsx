@@ -17,7 +17,7 @@ import usePromise from '../hooks/usePromise';
 import { Hemisphere } from '../interface';
 import { FishPlaceEnum } from '../lib/FishPlace';
 import FishRepository from '../lib/FishRepository';
-import FishShadowSize from '../lib/FishShadowSize';
+import { FishShadowSizeEnum } from '../lib/FishShadowSize';
 import groupFishesByNow from '../lib/groupFishesByNow';
 import containerStyle from '../styles/containerStyle';
 
@@ -123,13 +123,25 @@ const FishListPage: React.FC = () => {
             }}
           >
             <Select defaultValue={hemisphere} onChange={handleChangeHemisphere}>
-              <option value={FishShadowSize.NARROW}>{text.SIZE_NARROW}</option>
-              <option value={FishShadowSize.XSMALL}>{text.SIZE_XSMALL}</option>
-              <option value={FishShadowSize.SMALL}>{text.SIZE_SMALL}</option>
-              <option value={FishShadowSize.MEDIUM}>{text.SIZE_MEDIUM}</option>
-              <option value={FishShadowSize.LARGE}>{text.SIZE_LARGE}</option>
-              <option value={FishShadowSize.XLARGE}>{text.SIZE_XLARGE}</option>
-              <option value={FishShadowSize.XXLARGE}>
+              <option value={FishShadowSizeEnum.NARROW}>
+                {text.SIZE_NARROW}
+              </option>
+              <option value={FishShadowSizeEnum.XSMALL}>
+                {text.SIZE_XSMALL}
+              </option>
+              <option value={FishShadowSizeEnum.SMALL}>
+                {text.SIZE_SMALL}
+              </option>
+              <option value={FishShadowSizeEnum.MEDIUM}>
+                {text.SIZE_MEDIUM}
+              </option>
+              <option value={FishShadowSizeEnum.LARGE}>
+                {text.SIZE_LARGE}
+              </option>
+              <option value={FishShadowSizeEnum.XLARGE}>
+                {text.SIZE_XLARGE}
+              </option>
+              <option value={FishShadowSizeEnum.XXLARGE}>
                 {text.SIZE_XXLARGE}
               </option>
             </Select>

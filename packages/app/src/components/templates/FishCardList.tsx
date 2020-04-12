@@ -16,7 +16,6 @@ export interface FishCardListProps {
  */
 const FishCardList: React.FC<FishCardListProps> = React.memo(({ fishes }) => {
   const getListItemByFish = (fish: Fish): React.ReactNode => {
-    const { placeText, shadowSizeText } = fish;
     const applyHoursText = getApplyHoursText(fish.data.applyHours);
 
     return (
@@ -25,8 +24,8 @@ const FishCardList: React.FC<FishCardListProps> = React.memo(({ fishes }) => {
           imageUrl={`/images/fishes/${fish.data.imageUrl}`}
           name={fish.data.name}
           price={fish.data.price}
-          place={placeText}
-          shadowSize={shadowSizeText}
+          place={fish.place.toString()}
+          shadowSize={fish.shadowSize.toString()}
           applyHours={applyHoursText}
           applyMonths={fish.data.applyMonths}
         />
