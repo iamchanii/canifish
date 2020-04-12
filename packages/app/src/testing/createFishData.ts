@@ -1,6 +1,6 @@
 import { Chance } from 'chance';
 import { FishData } from '../lib/Fish';
-import FishPlace from '../lib/FishPlace';
+import FishPlaceEnum from '../lib/FishPlace';
 import FishShadowSize from '../lib/FishShadowSize';
 
 /**
@@ -14,12 +14,12 @@ const createFishData = (): FishData => {
     chance.integer({ min: 1, max: 12 }),
   );
   const place = chance.pickset([
-    FishPlace.CLIFFTOP,
-    FishPlace.MOUTH,
-    FishPlace.OCEAN,
-    FishPlace.PIER,
-    FishPlace.POND,
-    FishPlace.RIVER,
+    FishPlaceEnum.CLIFFTOP,
+    FishPlaceEnum.MOUTH,
+    FishPlaceEnum.OCEAN,
+    FishPlaceEnum.PIER,
+    FishPlaceEnum.POND,
+    FishPlaceEnum.RIVER,
   ]);
   const shadowSize = chance.pickone([
     FishShadowSize.NARROW,

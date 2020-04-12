@@ -15,7 +15,7 @@ import storageKey from '../constants/storageKey';
 import text from '../constants/text';
 import usePromise from '../hooks/usePromise';
 import { Hemisphere } from '../interface';
-import FishPlace from '../lib/FishPlace';
+import FishPlaceEnum from '../lib/FishPlace';
 import FishRepository from '../lib/FishRepository';
 import FishShadowSize from '../lib/FishShadowSize';
 import groupFishesByNow from '../lib/groupFishesByNow';
@@ -103,12 +103,14 @@ const FishListPage: React.FC = () => {
 
         <FormLabel label="출현장소">
           <Select defaultValue={hemisphere} onChange={handleChangeHemisphere}>
-            <option value={FishPlace.RIVER}>{text.PLACE_RIVER}</option>
-            <option value={FishPlace.CLIFFTOP}>{text.PLACE_CLIFFTOP}</option>
-            <option value={FishPlace.MOUTH}>{text.PLACE_MOUTH}</option>
-            <option value={FishPlace.POND}>{text.PLACE_POND}</option>
-            <option value={FishPlace.OCEAN}>{text.PLACE_OCEAN}</option>
-            <option value={FishPlace.PIER}>{text.PLACE_PIER}</option>
+            <option value={FishPlaceEnum.RIVER}>{text.PLACE_RIVER}</option>
+            <option value={FishPlaceEnum.CLIFFTOP}>
+              {text.PLACE_CLIFFTOP}
+            </option>
+            <option value={FishPlaceEnum.MOUTH}>{text.PLACE_MOUTH}</option>
+            <option value={FishPlaceEnum.POND}>{text.PLACE_POND}</option>
+            <option value={FishPlaceEnum.OCEAN}>{text.PLACE_OCEAN}</option>
+            <option value={FishPlaceEnum.PIER}>{text.PLACE_PIER}</option>
           </Select>
         </FormLabel>
 
