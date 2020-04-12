@@ -6,6 +6,7 @@ import {
   subDays,
 } from 'date-fns/fp';
 import * as R from 'remeda';
+import text from '../constants/text';
 import { Hemisphere } from './../interface';
 import Clock from './Clock';
 
@@ -126,6 +127,15 @@ export interface FishMatchOptions {
   hasSound?: boolean;
 }
 
+const placeTextMap: { [key in FishPlace]: string } = {
+  river: text.PLACE_RIVER,
+  mouth: text.PLACE_MOUTH,
+  clifftop: text.PLACE_CLIFFTOP,
+  pond: text.PLACE_POND,
+  ocean: text.PLACE_OCEAN,
+  pier: text.PLACE_PIER,
+};
+
 export default class Fish {
   // TODO: react-scripts TS 3.8 지원 시 private field로 전환
   _data: FishData;
@@ -142,16 +152,29 @@ export default class Fish {
     return this._data;
   }
 
-  getApplyMonthsData(hemisphere: Hemisphere = Hemisphere.NORTHERN): number[] {
-    return this._applyMonths.getData(hemisphere);
-  }
-
   get hasSound(): boolean {
     return this.data.hasSound;
   }
 
   get hasFin(): boolean {
     return this.data.hasFin;
+  }
+
+  get name(): string {
+    return this.data.name;
+  }
+
+  get placeText(): string {
+    return [
+      ...this.data.place.map((place) => placeTextMap[place]),
+      this.data.onlyRaining && text.ONLY_RAINING,
+    ]
+      .filter(Boolean)
+      .join(', ');
+  }
+
+  getApplyMonthsData(hemisphere: Hemisphere = Hemisphere.NORTHERN): number[] {
+    return this._applyMonths.getData(hemisphere);
   }
 
   isShadowSizeEqual(shadowSize: FishShadowSize): boolean {

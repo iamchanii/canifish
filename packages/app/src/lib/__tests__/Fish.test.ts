@@ -1,4 +1,5 @@
 import { Chance } from 'chance';
+import text from '../../constants/text';
 import { Hemisphere } from '../../interface';
 import createFishData from '../../testing/createFishData';
 import MockClock from '../../testing/mockClock';
@@ -273,6 +274,71 @@ describe('Fish', () => {
       MockClock.setMonths(0);
       MockClock.setHours(0);
       expect(fish.isApplyNow()).toBe(false);
+    });
+  });
+
+  it('name', () => {
+    const fish = new Fish(fishData);
+
+    expect(fish.name).toBe(fishData.name);
+  });
+
+  describe('placeText', () => {
+    it('river인 경우 text.PLACE_RIVER을 반환한다.', () => {
+      fishData.place = [FishPlace.RIVER];
+      const fish = new Fish(fishData);
+
+      expect(fish.placeText).toContain(text.PLACE_RIVER);
+    });
+
+    it('mouth인 경우 text.PLACE_MOUTH을 반환한다.', () => {
+      fishData.place = [FishPlace.MOUTH];
+      const fish = new Fish(fishData);
+
+      expect(fish.placeText).toContain(text.PLACE_MOUTH);
+    });
+
+    it('clifftop인 경우 text.PLACE_CLIFFTOP을 반환한다.', () => {
+      fishData.place = [FishPlace.CLIFFTOP];
+      const fish = new Fish(fishData);
+
+      expect(fish.placeText).toContain(text.PLACE_CLIFFTOP);
+    });
+
+    it('pond인 경우 text.PLACE_POND을 반환한다.', () => {
+      fishData.place = [FishPlace.POND];
+      const fish = new Fish(fishData);
+
+      expect(fish.placeText).toContain(text.PLACE_POND);
+    });
+
+    it('ocean인 경우 text.PLACE_OCEAN을 반환한다.', () => {
+      fishData.place = [FishPlace.OCEAN];
+      const fish = new Fish(fishData);
+
+      expect(fish.placeText).toContain(text.PLACE_OCEAN);
+    });
+
+    it('pier인 경우 text.PLACE_PIER을 반환한다.', () => {
+      fishData.place = [FishPlace.PIER];
+      const fish = new Fish(fishData);
+
+      expect(fish.placeText).toContain(text.PLACE_PIER);
+    });
+
+    it('onlyRaining 옵션을 전달하면 비 또는 눈이 포함되어 반환된다.', () => {
+      fishData.place = chance.pickset([
+        FishPlace.CLIFFTOP,
+        FishPlace.MOUTH,
+        FishPlace.OCEAN,
+        FishPlace.PIER,
+        FishPlace.POND,
+        FishPlace.RIVER,
+      ]);
+      fishData.onlyRaining = true;
+      const fish = new Fish(fishData);
+
+      expect(fish.placeText).toContain(text.ONLY_RAINING);
     });
   });
 });
