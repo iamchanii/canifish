@@ -22,7 +22,7 @@
     "react-icons": "^3.9.0",
     "react-scripts": "3.4.1",
     "remeda": "^0.0.18",
-    "typescript": "~3.7.2"
+    "typescript": "~3.8.3"
   },
   "scripts": {
     "start": "react-app-rewired start",
