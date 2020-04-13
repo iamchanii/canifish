@@ -20,19 +20,18 @@ export interface FishData {
 }
 
 export default class Fish {
-  // TODO: react-scripts TS 3.8 지원 시 private field로 전환
-  readonly _data: FishData;
-  readonly _applyMonths: ApplyMonths;
-  readonly applyHours: ApplyHours[];
-  readonly place: FishPlace;
-  readonly shadowSize: FishShadowSize;
+  readonly #data: FishData;
+  readonly #applyMonths: ApplyMonths;
+  readonly #applyHours: ApplyHours[];
+  readonly #place: FishPlace;
+  readonly #shadowSize: FishShadowSize;
 
   constructor(data: FishData) {
-    this._data = data;
-    this._applyMonths = new ApplyMonths(data.applyMonths);
-    this.applyHours = data.applyHours.map((hours) => new ApplyHours(hours));
-    this.place = new FishPlace(data.place, data.onlyRaining);
-    this.shadowSize = new FishShadowSize(
+    this.#data = data;
+    this.#applyMonths = new ApplyMonths(data.applyMonths);
+    this.#applyHours = data.applyHours.map((hours) => new ApplyHours(hours));
+    this.#place = new FishPlace(data.place, data.onlyRaining);
+    this.#shadowSize = new FishShadowSize(
       data.shadowSize,
       data.hasFin,
       data.hasSound,
@@ -40,23 +39,47 @@ export default class Fish {
   }
 
   get data(): FishData {
-    return this._data;
+    return this.#data;
+  }
+
+  get id(): number {
+    return this.#data.id;
+  }
+
+  get imageUrl(): string {
+    return this.#data.imageUrl;
   }
 
   get hasSound(): boolean {
-    return this.data.hasSound;
+    return this.#data.hasSound;
   }
 
   get hasFin(): boolean {
-    return this.data.hasFin;
+    return this.#data.hasFin;
   }
 
   get name(): string {
-    return this.data.name;
+    return this.#data.name;
+  }
+
+  get price(): number {
+    return this.#data.price;
+  }
+
+  get placeText(): string {
+    return this.#place.toString();
+  }
+
+  get shadowSizeText(): string {
+    return this.#shadowSize.toString();
+  }
+
+  get applyHoursText(): string {
+    return this.#applyHours.map(String).join(', ');
   }
 
   getApplyMonthsData(hemisphere: Hemisphere = Hemisphere.NORTHERN): number[] {
-    return this._applyMonths.getData(hemisphere);
+    return this.#applyMonths.getData(hemisphere);
   }
 
   isPriceIncludeIn(priceRange: number[]): boolean {
@@ -69,13 +92,13 @@ export default class Fish {
     targetMonth: number,
     hemisphere: Hemisphere = Hemisphere.NORTHERN,
   ): boolean {
-    return this._applyMonths.isApply(targetMonth, hemisphere);
+    return this.#applyMonths.isApply(targetMonth, hemisphere);
   }
 
   isApplyNow(hemisphere: Hemisphere = Hemisphere.NORTHERN): boolean {
     return (
       this.isApplyMonths(Clock.nowMonth, hemisphere) &&
-      this.applyHours.some((hours) => hours.isApplyFromNow())
+      this.#applyHours.some((hours) => hours.isApplyFromNow())
     );
   }
 }

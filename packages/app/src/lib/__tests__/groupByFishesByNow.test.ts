@@ -22,8 +22,8 @@ test('현재 시간을 기준으로 잡을 수 있는 물고기와 아닌 물고
 
   const { available, etc } = groupFishesByNow(fishes, Hemisphere.NORTHERN);
 
-  expect(available).toContainEqual(fishes[0]);
-  expect(etc).not.toContainEqual(fishes[0]);
+  expect(available).toContain(fishes[0]);
+  expect(etc).not.toContain(fishes[0]);
 });
 
 test('남반구인 경우 그룹화 된 물고기의 출현 기간이 6개월씩 조정되어 있다.', () => {

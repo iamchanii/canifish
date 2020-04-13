@@ -48,19 +48,18 @@ const intlOptionsByLanguageMap: {
 };
 
 export default class ApplyHours {
-  // TODO: react-scripts TS 3.8 지원 시 private field로 전환
-  _data: number[];
+  readonly #data: number[];
 
   constructor(data: number[]) {
-    this._data = data;
+    this.#data = data;
   }
 
   private get fromHours(): number {
-    return this._data[0];
+    return this.#data[0];
   }
 
   private get endHours(): number {
-    return this._data[1];
+    return this.#data[1];
   }
 
   private get diffHours(): number {
@@ -99,16 +98,13 @@ export default class ApplyHours {
   }
 
   private get isAllDay(): boolean {
-    return this._data[0] === 0 && this._data[1] === 23;
+    return this.#data[0] === 0 && this.#data[1] === 23;
   }
 
-  private static _intl = new Intl.DateTimeFormat(
-    language,
-    intlOptionsByLanguageMap[language],
-  );
+  #intl = new Intl.DateTimeFormat(language, intlOptionsByLanguageMap[language]);
 
   private format(date: Date): string {
-    return ApplyHours._intl.format(date);
+    return this.#intl.format(date);
   }
 
   toString(): string {
@@ -116,7 +112,7 @@ export default class ApplyHours {
       return text.ALL_DAY;
     }
 
-    return this._data
+    return this.#data
       .map((hour) => {
         const date = convertHoursToDate(hour);
         return this.format(date);

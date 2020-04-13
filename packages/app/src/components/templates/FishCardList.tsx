@@ -16,15 +16,15 @@ export interface FishCardListProps {
 const FishCardList: React.FC<FishCardListProps> = React.memo(({ fishes }) => {
   const getListItemByFish = (fish: Fish): React.ReactNode => {
     return (
-      <li key={fish.data.id}>
+      <li key={fish.id}>
         <FishCard
-          imageUrl={`/images/fishes/${fish.data.imageUrl}`}
-          name={fish.data.name}
-          price={fish.data.price}
-          place={fish.place.toString()}
-          shadowSize={fish.shadowSize.toString()}
-          applyHours={fish.applyHours.toString()}
-          applyMonths={fish.data.applyMonths}
+          imageUrl={`/images/fishes/${fish.imageUrl}`}
+          name={fish.name}
+          price={fish.price}
+          place={fish.placeText}
+          shadowSize={fish.shadowSizeText}
+          applyHours={fish.applyHoursText}
+          applyMonths={fish.getApplyMonthsData()}
         />
       </li>
     );
